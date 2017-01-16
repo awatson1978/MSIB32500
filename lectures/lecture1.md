@@ -18,7 +18,7 @@ ssh username@tarbell.cri.uchicago.edu
 ```
 Enter your **_password_** when prompted. Type yes if you are prompted to accept a key.
 
-:pencil2: If you are using a Windows machine (other than Windows 10 Anniversary Edition), you need install [MobaXter](http://mobaxterm.mobatek.net/)
+:pushpin: If you are using a Windows machine (other than Windows 10 Anniversary Edition), you need install [MobaXter](http://mobaxterm.mobatek.net/)
 
 ## How to get help
 
@@ -126,7 +126,7 @@ g. Compress files
 
 ```bash
 cd /group/bioinformatics/shared/MSIB32500/Lecture1/linux
-ls -l SRR*  
+ls -l SRR*                     ### List all files that start with SRR
 gzip SRR001655.fastq           ### Compress a file, this command should create a compressed file named SRR001655.fastq.gz
 ls -l                        
 gunzip SRR001655.fastq.gz      ### Decompress a file
