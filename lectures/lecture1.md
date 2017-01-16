@@ -17,14 +17,13 @@ March - May 2017; 9:00AM - 12:00PM
 
 ## Log on to CRI's High Performance Computing (HPC) system
 
-In mac open the Terminal
+In MacOS open the Terminal
+:pushpin: If you are using a Windows machine (other than Windows 10 Anniversary Edition), you need install [MobaXter](http://mobaxterm.mobatek.net/)
 
 ```bash
 ssh username@tarbell.cri.uchicago.edu
 ```
 Enter your **_password_** when prompted. Type yes if you are prompted to accept a key.
-
-:pushpin: If you are using a Windows machine (other than Windows 10 Anniversary Edition), you need install [MobaXter](http://mobaxterm.mobatek.net/)
 
 ## How to get help
 
