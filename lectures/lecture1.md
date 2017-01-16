@@ -33,12 +33,12 @@ apropos secure copy
 ```
 
 ## Navigation
-- List files in your home directory
+a. List files in your home directory
 ```bash
 ls            ### List the files in your current directory
 ls -a         ### List the files in your current directory; do not ignore entries starting with .
 ```
-- Change current directory to the root of the file system and explore the directory structure
+b. Change current directory to the root of the file system and explore the directory structure
 ```bash
 cd /          ### / represents the root of the file system
 ls -l         ### List files in long format
@@ -47,26 +47,26 @@ cd /tmp       ### Change current directory to /tmp
 pwd
 ls -l
 ```
-- Change to parent directory; one 'step' UP on the file tree
+c. Change to parent directory; one 'step' UP on the file tree
 ```bash
 cd ..        
 pwd
 ls -l
 ```
-- Go back to your home directory
+d. Go back to your home directory
 ```bash
 cd ~
 pwd
 ```
 ## Directory and file operations
 
- 1. Create a new directory
+a. Create a new directory
 ```bash
 mkdir mydir  ### Make a new directory called 'mydir'
 mkdir newfolder1
 ls -l 
 ```
- 2. Create a new file in a directory
+b. Create a new file in a directory
 ```bash
 cd mydir
 nano file1.txt                   #### Use nano to create a new file, use Control O to save and Control-X to exit.
