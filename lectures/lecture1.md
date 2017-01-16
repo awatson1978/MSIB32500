@@ -74,9 +74,34 @@ b. Create a new file in a directory
 ```bash
 cd mydir
 nano file1.txt          ### Use nano editor to create a new file, use Control-O to save and Control-X to exit.
-ls
+pwd
+ls -l
+```
+c. Copy files and directories 
+
+The **cp** command copy file(s) from *source* to *dest*
+```
+cp /home/usr/dir/{file1,file2,file3,file4} /home/usr/destination/
 ```
 
+```bash
+cp file1.txt copy.txt
+ls -l
+more copy.txt         ### Quick look to the contents of the file copy.txt
+man more              ### Review the manual of the comand more; type q to exit
+cp ~/mydir/*.txt ~/newfolder/          ### copy old the .txt files from mydir to newfolder 
+mkdir deleteme
+ls
+cd /mydir
+cp file1.txt ~/deleteme/
+
+
+cp /mydir/file1.txt .                  
+mkdir temp
+ 
+cp *.txt temp                   ### Copy all .txt file to temp directory
+ls temp                         ### Verify the files were copied successfully
+```
 
 
 
