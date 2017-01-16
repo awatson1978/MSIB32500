@@ -60,13 +60,13 @@ pwd
 ```
 ## Directory and file operations
 
-- 1. Create a new directory
+ 1. Create a new directory
 ```bash
 mkdir mydir  ### Make a new directory called 'mydir'
 mkdir newfolder1
 ls -l 
 ```
-- 2. Create a new file in a directory
+ 2. Create a new file in a directory
 ```bash
 cd mydir
 nano file1.txt                   #### Use nano to create a new file, use Control O to save and Control-X to exit.
