@@ -16,6 +16,8 @@ ssh username@tarbell.cri.uchicago.edu
 ```
 Enter your **_password_** when prompted. Type yes if you are prompted to accept a key.
 
+:pencil2: If you are using a Windows machine (other than Windows 10 Anniversary Edition), you need install [MobaXter](http://mobaxterm.mobatek.net/)
+
 ## How to get help
 
 - Use the manual ($ man) command; to exit the manual type 'q'
