@@ -16,6 +16,18 @@ ssh username@tarbell.cri.uchicago.edu
 ```
 Enter your **password** when prompted. Type yes if you are prompted to accept a key.
 
+## How to get help
+
+- Use the manual ($ man) command; to exit the manual type **q**
+- Ask for help ($ your_command --help)
+
+```bash
+man ls
+```
+```bash
+man mkdir --help
+```
+
 ## Navigation
 1. List files in your home directory
 ```bash
