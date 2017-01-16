@@ -25,14 +25,14 @@ Enter your **password** when prompted. Type yes if you are prompted to accept a 
 man ls
 ```
 ```bash
-man mkdir --help
+mkdir --help
 ```
 
 ## Navigation
 1. List files in your home directory
 ```bash
-ls            ### List non-hidden files in your current directory
-ls -a         ### List all files in your current directory
+ls            ### List the files in your current directory
+ls -a         ### List the files in your current directory; do not ignore entries starting with **.**
 ```
 2. Change current directory to the root of the file system and explore the directory structure
 ```bash
