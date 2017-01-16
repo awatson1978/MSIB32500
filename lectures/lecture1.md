@@ -34,6 +34,8 @@ apropos secure copy
 
 ## Navigation
 1. List files in your home directory
+
+
 2. text
 ```bash
 ls            ### List the files in your current directory
