@@ -14,12 +14,13 @@
 ```bash
 ssh username@tarbell.cri.uchicago.edu
 ```
-Enter your **password** when prompted. Type yes if you are prompted to accept a key.
+Enter your **_password_** when prompted. Type yes if you are prompted to accept a key.
 
 ## How to get help
 
 - Use the manual ($ man) command; to exit the manual type 'q'
 - Ask for help ($ your_command --help)
+- Use the comand apropos ($ apropos text)
 
 ```bash
 man ls
@@ -48,4 +49,7 @@ ls -l
 cd ~          ### Change to your home directory
 pwd
 ls -l
-
+cd ..         ## Change to parent directory; one 'step' UP on the file tree
+pwd
+ls -l
+cd ~ 
