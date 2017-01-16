@@ -48,12 +48,12 @@ pwd
 ls -l
 ```
 3. Change to parent directory; one 'step' UP on the file tree
-```
+```bash
 cd ..        
 pwd
 ls -l
 ```
-4. Go back to your home directory
+4.  Go back to your home directory
 ```bash
 cd ~
 pwd
