@@ -40,16 +40,24 @@ ls -a         ### List the files in your current directory; do not ignore entrie
 ```
 2. Change current directory to the root of the file system and explore the directory structure
 ```bash
-cd /          ### Change current directory to the root of the file system
+cd /          ### / represents the root of the file system
 ls -l         ### List files in long format
 pwd           ### Show the current directory
 cd /tmp       ### Change current directory to /tmp
 pwd
 ls -l
-cd ~          ### Change to your home directory
+```
+3. Change to parent directory; one 'step' UP on the file tree
+```
+cd ..        
 pwd
 ls -l
-cd ..         ## Change to parent directory; one 'step' UP on the file tree
+```
+4. Go back to your home directory
+```bash
+cd ~
 pwd
-ls -l
-cd ~ 
+```
+
+
+ 
