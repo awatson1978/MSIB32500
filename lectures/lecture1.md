@@ -1,5 +1,9 @@
 # Introduction to Unix/Linux: 
 
+**Center for Research Informatics, University of Chicago
+March - May 2017; 9:00AM - 12:00PM
+**Instructor:** Jorge Andrade, Ph.D.
+
 ## Learning Objectives
 
 - This training will teach you all you need to know to start using Linux, be it on the CRI’s High Performance Infrastructure (HPC), or on your own computer (even if you are already running Windows or Mac OS).
