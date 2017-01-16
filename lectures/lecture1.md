@@ -16,3 +16,25 @@ ssh username@tarbell.cri.uchicago.edu
 ```
 Enter your **password** when prompted. Type yes if you are prompted to accept a key.
 
+## Navigation
+1. List files in your home directory
+```bash
+ls            ### List non-hidden files in your current directory
+ls -a         ### List all files in your current directory
+```
+2. Change current directory to the root of the file system and explore the directory structure
+```bash
+cd /          ### Change current directory to root of the file system
+ 
+ls
+ 
+ls -l         ### List files in long format
+ 
+pwd           ### Show the current directory
+ 
+cd /tmp       ### Change current directory to /tmp
+ 
+ls
+ 
+ls -l
+```
