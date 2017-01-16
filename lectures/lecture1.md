@@ -2,10 +2,10 @@
 
 ## Learning Objectives
 
-*. This training will teach you all you need to know to start using Linux, be it on the CRI’s High Performance Infrastructure (HPC), or on your own computer (even if you are already running Windows or Mac OS).
-*. After this training you will: 
-..1. Feel comfortable using Linux
-3. text
+- This training will teach you all you need to know to start using Linux, be it on the CRI’s High Performance Infrastructure (HPC), or on your own computer (even if you are already running Windows or Mac OS).
+- After this training you will: 
+..-Feel comfortable using Linux
+
 
 This description assumes that you already have a
 [user account on midway](http://rcc.uchicago.edu/getting-started/request-account). If
