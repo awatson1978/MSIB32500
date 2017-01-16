@@ -1,6 +1,6 @@
 # Introduction to Unix/Linux: 
 
-**Center for Research Informatics, University of Chicago
+**Center for Research Informatics, University of Chicago***
 March - May 2017; 9:00AM - 12:00PM
 **Instructor:** Jorge Andrade, Ph.D.
 
