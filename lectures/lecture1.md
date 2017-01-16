@@ -33,7 +33,7 @@ apropos secure copy
 ```
 
 ## Navigation
--List files in your home directory
+- List files in your home directory
 ```bash
 ls            ### List the files in your current directory
 ls -a         ### List the files in your current directory; do not ignore entries starting with .
@@ -58,6 +58,23 @@ ls -l
 cd ~
 pwd
 ```
+## Directory and file operations
+
+- 1. Create a new directory
+```bash
+mkdir mydir  ### Make a new directory called 'mydir'
+mkdir newfolder1
+ls -l 
+```
+- 2. Create a new file in a directory
+```bash
+cd mydir
+nano file1.txt                   #### Use nano to create a new file, use Control O to save and Control-X to exit.
+ls
+```
+
+
+
 
 
  
