@@ -11,6 +11,8 @@
 
 ## Log on to CRI's High Performance Computing (HPC) system
 
+In mac open the Terminal
+
 ```bash
 ssh username@tarbell.cri.uchicago.edu
 ```
