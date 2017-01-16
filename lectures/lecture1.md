@@ -62,7 +62,7 @@ d. Go back to your home directory
 cd ~
 pwd
 ```
-## Directory and file operations
+## Operations with directories and files 
 
 a. Create a new directory
 ```bash
@@ -73,34 +73,64 @@ ls -l
 b. Create a new file in a directory
 ```bash
 cd mydir
-nano file1.txt          ### Use nano editor to create a new file, use Control-O to save and Control-X to exit.
+nano file1.txt          ### Use nano editor to create a new file, write some text and use Control-O to save and Control-X to exit.
 pwd
 ls -l
 ```
 c. Copy files and directories 
-
-The **cp** command copy file(s) from *source* to *dest*
-```
-cp /home/usr/dir/{file1,file2,file3,file4} /home/usr/destination/
-```
-
 ```bash
 cp file1.txt copy.txt
 ls -l
 more copy.txt         ### Quick look to the contents of the file copy.txt
 man more              ### Review the manual of the comand more; type q to exit
-cp ~/mydir/*.txt ~/newfolder/          ### copy old the .txt files from mydir to newfolder 
-mkdir deleteme
-ls
-cd /mydir
-cp file1.txt ~/deleteme/
+cp ~/mydir/*.txt ~/newfolder1/          ### copy all .txt files from mydir to newfolder1 
+cd ~/newfolder1/
+ls -l                 ### List the files you just copied
+cd ..                 ### Change to parent directory
+pwd
+mkdir newfolder2
+cd newfolder2
+cp ~/newfolder1/file1.txt .     ### Copy file1.txt on current (.) directory
+ls -l
+cd ~
+pwd
+```
+d. Remove a file or directory
 
+```bash
+cd newfolder1        
+ls -l
+rm file1.txt          ### Remove file1.txt
+ls -l
+cd                    ### Back to your home directory (this is equivalent to cd ~)
+```
 
-cp /mydir/file1.txt .                  
-mkdir temp
- 
-cp *.txt temp                   ### Copy all .txt file to temp directory
-ls temp                         ### Verify the files were copied successfully
+```bash
+rm -r mydir           ### You will delete the whole mydir folder and all files on it, there is no way to recover those files
+```
+e. Rename a file or folder
+
+```bash
+cd newfolder1
+mv copy.txt newname.txt         
+ls -l
+cd                              
+mv newfolder1 newnamefolder                ### Rename newfolder1 with newnamefolder
+```
+f. Move files from one folder to another
+
+```bash
+mv newfolder2/file1.txt newnamefolder
+```
+g. Compress files
+
+```bash
+cd /group/bioinformatics/shared/MSIB32500/Lecture1/linux
+ls -l SRR*  
+gzip SRR001655.fastq           ### Compress a file, this command should create a compressed file named SRR001655.fastq.gz
+ls -l                        
+gunzip SRR001655.fastq.gz      ### Decompress a file
+ls -l
 ```
 
 
