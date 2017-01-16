@@ -18,7 +18,7 @@ Enter your **password** when prompted. Type yes if you are prompted to accept a 
 
 ## How to get help
 
-- Use the manual ($ man) command; to exit the manual type **q**
+- Use the manual ($ man) command; to exit the manual type 'q'
 - Ask for help ($ your_command --help)
 
 ```bash
@@ -27,26 +27,25 @@ man ls
 ```bash
 mkdir --help
 ```
+```bash
+apropos secure copy
+```
 
 ## Navigation
 1. List files in your home directory
 ```bash
 ls            ### List the files in your current directory
-ls -a         ### List the files in your current directory; do not ignore entries starting with **.**
+ls -a         ### List the files in your current directory; do not ignore entries starting with .
 ```
 2. Change current directory to the root of the file system and explore the directory structure
 ```bash
-cd /          ### Change current directory to root of the file system
- 
-ls
- 
+cd /          ### Change current directory to the root of the file system
 ls -l         ### List files in long format
- 
 pwd           ### Show the current directory
- 
 cd /tmp       ### Change current directory to /tmp
- 
-ls
- 
+pwd
 ls -l
-```
+cd ~          ### Change to your home directory
+pwd
+ls -l
+
