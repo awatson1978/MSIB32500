@@ -33,12 +33,12 @@ apropos secure copy
 ```
 
 ## Navigation
-1. List files in your home directory
+-List files in your home directory
 ```bash
 ls            ### List the files in your current directory
 ls -a         ### List the files in your current directory; do not ignore entries starting with .
 ```
-2. Change current directory to the root of the file system and explore the directory structure
+-Change current directory to the root of the file system and explore the directory structure
 ```bash
 cd /          ### / represents the root of the file system
 ls -l         ### List files in long format
@@ -47,13 +47,13 @@ cd /tmp       ### Change current directory to /tmp
 pwd
 ls -l
 ```
-3. Change to parent directory; one 'step' UP on the file tree
+-Change to parent directory; one 'step' UP on the file tree
 ```bash
 cd ..        
 pwd
 ls -l
 ```
-4.  Go back to your home directory
+-Go back to your home directory
 ```bash
 cd ~
 pwd
