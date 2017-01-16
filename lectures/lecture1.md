@@ -34,9 +34,6 @@ apropos secure copy
 
 ## Navigation
 1. List files in your home directory
-
-
-2. text
 ```bash
 ls            ### List the files in your current directory
 ls -a         ### List the files in your current directory; do not ignore entries starting with .
