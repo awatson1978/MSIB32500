@@ -399,6 +399,28 @@ ls file*                   ### List the files you just created
 
 :one: Using Linux command line to process FASTQ files
 
+a. The FASTQ format
+Next Generation Sequencing platfoms generate sequence data in [FASTQ format](https://en.wikipedia.org/wiki/FASTQ_format)
+FASTQ format has 4 lines per read, e.g.:
+```text
+@SRR001665.1 071112_SLXA-EAS1_s_4:1:1:672:654/1
+GCTACGGAATAAAACCAGGAACAACAGACCCAGCAC
++
+IIIIIIIIIIIIIIIIIIIIIIIIEII9IIIEIIII
+```
+Where:
+
+line 1: @SRR001665.1...- a unique identifier for the sequence read
+line 2: GCTACGGAA.... - the sequence read
+line 3: + - a separator between the read and the quality values (this sometimes replicates the sequence ID)
+line 4: IIIIIIIIIIIIIIIIIII.... - the quality values. 
+
+Exploring a fastq file using 'less', use <space> or f to go to the Next Page; b to the Previous Page; q to Exit;
+
+```bash
+less SRR001655.fastq
+```
+
 
 
 
