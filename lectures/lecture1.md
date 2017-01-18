@@ -395,11 +395,10 @@ chmod u+x hello.sh         ### Make your shell script executable
 ls file*                   ### List the files you just created 
 ```
 
-## Using what we learned on Bioinformatics
+## Using Linux command line in Bioinformatics
 
-:one: Using Linux command line to process FASTQ files
+a. Processing FASTQ files
 
-a. The FASTQ format
 Next Generation Sequencing platfoms generate sequence data in [FASTQ format](https://en.wikipedia.org/wiki/FASTQ_format)
 FASTQ format has 4 lines per read, e.g.:
 ```text
@@ -424,7 +423,7 @@ cd ~
 cp /group/bioinformatics/shared/MSIB32500/Lecture1/linux/SRR001655.fastq . 
 less SRR001655.fastq
 ```
-:question: How many reads are in the file SRR001655.fastq? (Hint: use cat, grep and wc) Show me the first 25 reads in file SRR001655.fastq? (Hint: use head) Show me all the sequences that contains GAGAGAGC in file SRR001655.fastq? (Hint: use grep) Write the last 10000 reads to a new file bottom_10000.fastq? (Hint: use tail)
+:one::question: How many reads are in the file SRR001655.fastq? (Hint: use cat, grep and wc) Show me the first 25 reads in file SRR001655.fastq? (Hint: use head) Show me all the sequences that contains GAGAGAGC in file SRR001655.fastq? (Hint: use grep) Write the last 10000 reads to a new file bottom_10000.fastq? (Hint: use tail)
 
 
 
