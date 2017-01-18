@@ -432,7 +432,7 @@ less SRR001655.fastq
 cat SRR001655.fastq | grep '@SRR'| wc -l
 ```
 ```bash
-head -n25 SRR001655.fastq
+head -n100 SRR001655.fastq
 ```
 ```bash
 grep 'GAGAGAGC' SRR001655.fastq > short_list.txt
@@ -440,10 +440,4 @@ grep 'GAGAGAGC' SRR001655.fastq > short_list.txt
 ```bash
 tail -40000 SRR001655.fastq > bottom_10000.fastq
 ```
-
-
-{toggle-cloak:id=f1}How many reads are in file SRR001655.fastq? (Hint: use cat, grep and wc)
-{cloak:id=f1}
-{code}
-cat SRR001655.fastq | grep ^@SRR | wc -l
 
