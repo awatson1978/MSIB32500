@@ -441,37 +441,9 @@ grep 'GAGAGAGC' SRR001655.fastq > short_list.txt
 tail -40000 SRR001655.fastq > bottom_10000.fastq
 ```
 
-{code}
+
 {toggle-cloak:id=f1}How many reads are in file SRR001655.fastq? (Hint: use cat, grep and wc)
 {cloak:id=f1}
 {code}
 cat SRR001655.fastq | grep ^@SRR | wc -l
-{code}
-or
-{code}
-grep ^@SRR SRR001655.fastq | wc -l
-{code}
-{cloak}
-{toggle-cloak:id=f2}Show me the first 25 reads in file SRR001655.fastq? (Hint: use head)
-{cloak:id=f2}
-{code}
-head -n 100 SRR001655.fastq
-{code}
-or
-{code}
-head -100 SRR001655.fastq
-{code}
-{cloak}
-{toggle-cloak:id=f3}Show me all the sequences that contains GAGAGAGC in file SRR001655.fastq? (Hint: use grep)
-{cloak:id=f3}
-{code}
-grep GAGAGAGC SRR001655.fastq
-{code}
-{cloak}
-{toggle-cloak:id=f4}Write the last 10000 reads to a new file bottom_10000.fastq? (Hint: use tail)
-{cloak:id=f4}
-{code}
-tail -40000 SRR001655.fastq > bottom_10000.fastq
-{code}
-{cloak}
 
