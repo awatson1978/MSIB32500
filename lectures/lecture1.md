@@ -139,7 +139,7 @@ gunzip SRR001655.fastq.gz      ### Decompress a file
 ls -l
 ```
 
-:bulb: Review the [LinuxReference.pdf]() file a compilation of most useful Linux comand for bioinformatics 
+:bulb: Review the [LinuxReference.pdf](https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/cheatsheets/LinuxReference.pdf) file a compilation of basic and most useful Linux comand for bioinformatics 
 
 
 
