@@ -410,16 +410,21 @@ IIIIIIIIIIIIIIIIIIIIIIIIEII9IIIEIIII
 ```
 Where:
 
+```
 line 1: @SRR001665.1...- a unique identifier for the sequence read
 line 2: GCTACGGAA.... - the sequence read
 line 3: + - a separator between the read and the quality values (this sometimes replicates the sequence ID)
 line 4: IIIIIIIIIIIIIIIIIII.... - the quality values. 
+```
 
 Exploring a fastq file using 'less', use <space> or f to go to the Next Page; b to the Previous Page; q to Exit;
 
 ```bash
+cd ~
+cp /group/bioinformatics/shared/MSIB32500/Lecture1/linux/SRR001655.fastq . 
 less SRR001655.fastq
 ```
+:question: How many reads are in the file SRR001655.fastq? (Hint: use cat, grep and wc) Show me the first 25 reads in file SRR001655.fastq? (Hint: use head) Show me all the sequences that contains GAGAGAGC in file SRR001655.fastq? (Hint: use grep) Write the last 10000 reads to a new file bottom_10000.fastq? (Hint: use tail)
 
 
 
