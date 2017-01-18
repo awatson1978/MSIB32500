@@ -428,22 +428,15 @@ less SRR001655.fastq
 3. Create the file 'short_list.txt' with a copy of the sequences in file SRR001655.fastq that contains GAGAGAGC (Hint: use grep) 
 4. Write the last 10000 reads to a new file called bottom_10000.fastq (Hint: use tail)
 
-1.
 ```bash
-cat SRR001655.fastq | grep '>'| wc -l
+cat SRR001655.fastq | grep '@SRR'| wc -l
 ```
-
-2.
 ```bash
 head -n25 SRR001655.fastq
 ```
-
-3.
 ```bash
 grep 'GAGAGAGC' SRR001655.fastq > short_list.txt
 ```
-
-4.
 ```bash
 tail -40000 SRR001655.fastq > bottom_10000.fastq
 ```
