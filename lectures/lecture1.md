@@ -5,6 +5,7 @@
 March - May 2017; 9:00AM - 12:00PM
 
 **Instructor:** Jorge Andrade, Ph.D.
+**Teaching Assistant:** Wenjun Kand Ms.C.
 
 ## Learning Objectives
 
