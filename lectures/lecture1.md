@@ -145,14 +145,14 @@ ls -l
 
 ## File transfer between computers
 
-a. Windows user download and install [WinSCP](http://winscp.net/eng/index.php). MacOS users open the Terminal
+:a: Windows user download and install [WinSCP](http://winscp.net/eng/index.php). MacOS users open the Terminal
 The *scp* (secure copy command) allows you to copy/move files between compters on the command line
 ```bash
 scp example1.txt username@tarbell.cri.uchicago.edu:.
 ```
 :bulb: The [hypexr.org](http://www.hypexr.org/linux_scp_help.php) website has nice list of examples on how to use secure copy (also some [computer comics and cartoons](http://www.hypexr.org/comics.php))
 
-b. You can use *wget* to get a file from the internet directly to your working directory in Linux
+:1: You can use *wget* to get a file from the internet directly to your working directory in Linux
 ```bash
 wget http://downloads.yeastgenome.org/curation/chromosomal_feature/saccharomyces_cerevisiae.gff
 ```
