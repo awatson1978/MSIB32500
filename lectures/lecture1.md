@@ -397,7 +397,7 @@ ls file*                   ### List the files you just created
 
 ## Using what we learned on Bioinformatics
 
-:1: using Linux command line to process FASTQ files
+:one: Using Linux command line to process FASTQ files
 
 
 
