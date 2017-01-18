@@ -440,7 +440,7 @@ grep 'GAGAGAGC' SRR001655.fastq > short_list.txt
 ```bash
 tail -40000 SRR001655.fastq > bottom_10000.fastq
 ```
-**b. Using the 'paste'command to format your data**
+**b. Using the 'paste' command to format your data**
 
 Showing fastq formated data as a table (i.e. in columns) can be very useful to explore the data, the 'paste' command writes lines in a file as columns separated by a the tab character. The command take character '-' as an option to represent the standard input, e.g.: the option '- - - -', will be trasalated as 'read four lines', and write them out as four columns:
 
@@ -451,9 +451,26 @@ cat bottom_10000.fastq | paste - - - - | head -10
 cat bottom_10000.fastq | paste - - - - | head -1000 > top_1000_tab.txt 
 cat top_1000_tab.txt 
 ```
-c. Using 'awk' and working with data in columns
+**c. Using 'awk' to work with data in columns**
 
 The linux command 'awk' isvery useful and practical for text manipulation in bioinformatics, 'awk' works with data in tabular format (like the result files on the previous excersice. The name stands for Aho, Weinberger and Kernighan (yes, [Brian Kernighan](https://www.cs.princeton.edu/~bwk/)), the authors of the language, which was started in 1977.
+
+What is it that awk does?
+
+awk is a utility/language designed for data extraction awk is often used with 'sed' to perform useful and practical text manipulation chores. One of the most simple and popular uses of 'awk' is selecting a column from a text file or other command's output. 
+
+The general syntax of awk is:
+
+```
+awk '/search pattern/{Actions}' filename
+```
+
+'awk' goes through each line in *filename* and if the line matches the *search pattern*, then action(s) is performed
+
+```bash
+awk '/N/{print}' top_1000_tab.txt
+```
+
 
 
 
