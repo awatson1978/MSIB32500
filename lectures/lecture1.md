@@ -183,6 +183,6 @@ cat < file1.txt                      ### Print file1.txt to screen
 d. Use the symbol '|' to pipe the output of one command as the input of another 
 
 ```bash
-ls | wc -l                           ### List the files and folders in the current directory and count the numbers
+ls | wc -l              ### List the files and folders in the current directory and then count them
 ```
 
