@@ -20,6 +20,7 @@ April - June 2017; Saturdays 9:00AM - 12:00PM
 ## Log on to CRI's High Performance Computing (HPC) system
 
 In MacOS open the Terminal
+
 :pushpin: If you are using a Windows machine (other than Windows 10 Anniversary Edition), you need install [MobaXter](http://mobaxterm.mobatek.net/)
 
 ```bash
@@ -140,9 +141,9 @@ gunzip SRR001655.fastq.gz      ### Decompress a file
 ls -l
 ```
 
-:bulb: Review the [LinuxReference.pdf](https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/cheatsheets/LinuxReference.pdf) file a compilation of basic and most useful Linux comand for bioinformatics 
+:bulb: Download and Review the [LinuxReference.pdf](https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/cheatsheets/LinuxReference.pdf) file, a compilation of basic and most useful Linux comand for bioinformatics 
 
-
+**File transfer between computers
 
 
  
