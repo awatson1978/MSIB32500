@@ -143,7 +143,17 @@ ls -l
 
 :bulb: Download and Review the [LinuxReference.pdf](https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/cheatsheets/LinuxReference.pdf) file, a compilation of basic and most useful Linux comand for bioinformatics 
 
-**File transfer between computers
+## File transfer between computers
+
+a. Windows user download and install [WinSCP](http://winscp.net/eng/index.php). MacOS users open the Terminal
+
+```bash
+scp example1.txt username@tarbell.cri.uchicago.edu:.
+```
+b. You can use *wget* to get a file from the internet directly to your working directory in Linux
+```bash
+wget http://downloads.yeastgenome.org/curation/chromosomal_feature/saccharomyces_cerevisiae.gff
+```
 
 
- 
+
