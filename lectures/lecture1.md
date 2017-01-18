@@ -158,7 +158,7 @@ wget http://downloads.yeastgenome.org/curation/chromosomal_feature/saccharomyces
 ```
 ## Input/Output redirect and pipe
 
-a. Use the symbol *>* to redirect the output of a command to a file
+a. Use the symbol '>' to redirect the output of a command to a file
 
 ```bash
 nano text1.txt                       ### Create a new file and write some text on it
@@ -170,14 +170,19 @@ cat text1.txt > text2.txt            ### Print file1.txt to file2.txt
 nano text2.txt                       ### Use nano to view file2.txt
 
 ```
-b. Use the symbol *>>* to redirect the output of a command to a file using 'append'
+b. Use the symbol '>>' to redirect the output of a command to a file using 'append'
 
 ```bash
 cat file1.txt >> file2.txt           ### Append file1.txt to file2.txt
 nano file2.txt                       ### View file2.txt
 ```
-c. Use the symbol *<* to redirect the input
+c. Use the symbol '<' to redirect the input
 ```bash
 cat < file1.txt                      ### Print file1.txt to screen
+```
+d. Use the symbol '|' to pipe the output of one command as the input of another 
+
+```bash
+ls | wc -l                           ### List the files and folders in the current directory and count the numbers
 ```
 
