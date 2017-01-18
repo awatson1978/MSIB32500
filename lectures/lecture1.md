@@ -185,4 +185,9 @@ d. Use the symbol '|' to pipe the output of one command as the input of another
 ```bash
 ls | wc -l              ### List the files and folders in the current directory and then count them
 ```
+## Text extraction and manipulation
+
+A standard Unix/Linux installation will have available several text editors (like: vi, vim, nano, emacs, and others) and text viewers (like: less, more, head and tail
+
+
 
