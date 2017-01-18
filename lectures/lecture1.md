@@ -156,6 +156,21 @@ b. You can use *wget* to get a file from the internet directly to your working d
 ```bash
 wget http://downloads.yeastgenome.org/curation/chromosomal_feature/saccharomyces_cerevisiae.gff
 ```
+## Input/Output redirect and pipe
+
+a. Use the symbol *>* to redirect the output of a command to a file
+
+```bash
+nano file1.txt                       ### Create a new file and write some text on it
+ 
+cat file1.txt                        ### Print file1.txt to screen
+ 
+cat file1.txt > file2.txt            ### Print file1.txt to file2.txt
+ 
+nano file2.txt                       ### Use nano to view file2.txt
+
+```
+
 
 
 
