@@ -440,4 +440,21 @@ grep 'GAGAGAGC' SRR001655.fastq > short_list.txt
 ```bash
 tail -40000 SRR001655.fastq > bottom_10000.fastq
 ```
+b. Using the 'paste'command to format your data
+
+Showing fastq formated data as a table (i.e. in columns) can be very useful to explore the data, the 'paste' command writes lines in a file as columns separated by a the tab character. The command take character '-' as an option to represent the standard input, e.g.: the option '- - - -', will be trasalated as 'read four lines', and write them out as four columns:
+
+```bash
+cat bottom_10000.fastq | paste - - - - | head -10
+```
+```bash
+cat bottom_10000.fastq | paste - - - - | head -1000 > top_1000_tab.txt 
+cat top_1000_tab.txt 
+```
+c. Using 'awk' and working with data in columns
+
+The linux command 'awk' isvery useful and practical for text manipulation in bioinformatics, 'awk' works with data in tabular format (like the result files on the previous excersice. The name stands for Aho, Weinberger and Kernighan (yes, [Brian Kernighan]ttps://www.cs.princeton.edu/~bwk/()), the authors of the language, which was started in 1977.
+
+
+
 
