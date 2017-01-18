@@ -2,13 +2,13 @@
 
 **Center for Research Informatics, University of Chicago**
 
-March - May 2017; 9:00AM - 12:00PM
+April - June 2017; Saturdays 9:00AM - 12:00PM
 
 **Instructor:** Jorge Andrade, Ph.D.
 
-**Teaching Assistant:** Wenjun Kand Ms.C.
+**Teaching Assistant:** Wenjun Kang, Ms.C.
 
-## Learning Objectives
+:book:## Learning Objectives
 
 - This training will teach you all you need to know to start using Linux, be it on the CRI’s High Performance Infrastructure (HPC), or on your own computer (even if you are already running Windows or Mac OS).
 - After this training you will: 
@@ -17,7 +17,7 @@ March - May 2017; 9:00AM - 12:00PM
   - Use bash to execute commands in Linux and know your way around the file system
   - Have an overview of Linux tools that are extremely useful for bioinformatics
 
-## Log on to CRI's High Performance Computing (HPC) system
+:computer:## Log on to CRI's High Performance Computing (HPC) system
 
 In MacOS open the Terminal
 :pushpin: If you are using a Windows machine (other than Windows 10 Anniversary Edition), you need install [MobaXter](http://mobaxterm.mobatek.net/)
