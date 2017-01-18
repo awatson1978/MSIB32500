@@ -375,7 +375,7 @@ $ wc list2.txt                           ###There are 5 lines, 10 words and 58 b
 
 *Why shell scripting?* if you need to repeat a process 1000 times, you could either retype the commands 1000 times or you can create a small 'script' (set of instructions) that tells the system to repeat it 1000 times.
 
-Let's create a simple shell script, _on your comand line_ open a text editor ($ nano hello.sh), type the following text on the editor:
+Let's create a simple shell script, **on your comand line** open a text editor ($ nano hello.sh), type the following text on the editor:
 
 ```text
 #!/bin/bash
@@ -394,6 +394,10 @@ chmod u+x hello.sh         ### Make your shell script executable
 ./hello.sh                 ### Execute your first shell script
 ls file*                   ### List the files you just created 
 ```
+
+## Using what we learned on Bioinformatics
+
+:a: Example 1: using Linux command line to process FASTQ files
 
 
 
