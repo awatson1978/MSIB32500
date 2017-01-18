@@ -141,8 +141,6 @@ gunzip SRR001655.fastq.gz      ### Decompress a file
 ls -l
 ```
 
-:bulb: Download and Review the [LinuxReference.pdf](https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/cheatsheets/LinuxReference.pdf) file, a compilation of basic and most useful Linux comand for bioinformatics 
-
 ## File transfer between computers
 
 a. Windows user download and install [WinSCP](http://winscp.net/eng/index.php). MacOS users open the Terminal
@@ -357,6 +355,39 @@ Apple:23.03
 SAP:11.22
 Yahoo:15.8
 ```
+
+f. Count the number of words, lines and bytes with 'wc'
+```bash
+$ wc -l list1.txt list2.txt              ###Count the number of lines in list1.txt and list2.txt
+ 4 list1.txt
+ 5 list2.txt
+ 9 total
+ 
+$ wc -w list2.txt                        ###Count the number of words in list2.txt
+10 list2.txt
+ 
+$ wc list2.txt                           ###There are 5 lines, 10 words and 58 bytes in list2.txt
+ 5 10 58 list2.txt
+```
+:bulb: Download and Review the [LinuxReference.pdf](https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/cheatsheets/LinuxReference.pdf) file, a compilation of basic and most useful Linux comand for bioinformatics 
+
+## Shell scripting
+
+*Why shell scripting?* if you need to repeat a process 1000 times, you could either retype the commands 1000 times or you can create a small 'script' (set of instructions) that tells the system to repeat it 1000 times.
+
+Let's create a simple shell script, on your comand line open a text editor (& nano hello.sh), type the following text on the editor:
+
+```text
+#!/bin/bash
+echo "Hello World!."
+echo "I am going to generate 10 files: file1.txt, file2.txt, ..., file10.txt"
+for i in {1..10}
+do echo "this is file $i" > file$i.txt
+done
+echo "Done"
+```
+
+
 
 
 
