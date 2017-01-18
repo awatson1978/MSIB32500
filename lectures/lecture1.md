@@ -397,7 +397,7 @@ ls file*                   ### List the files you just created
 
 ## Using Linux command line in Bioinformatics
 
-a. Processing FASTQ files
+**a. Processing FASTQ files
 
 Next Generation Sequencing platfoms generate sequence data in [FASTQ format](https://en.wikipedia.org/wiki/FASTQ_format)
 FASTQ format has 4 lines per read, e.g.:
@@ -440,7 +440,7 @@ grep 'GAGAGAGC' SRR001655.fastq > short_list.txt
 ```bash
 tail -40000 SRR001655.fastq > bottom_10000.fastq
 ```
-b. Using the 'paste'command to format your data
+**b. Using the 'paste'command to format your data
 
 Showing fastq formated data as a table (i.e. in columns) can be very useful to explore the data, the 'paste' command writes lines in a file as columns separated by a the tab character. The command take character '-' as an option to represent the standard input, e.g.: the option '- - - -', will be trasalated as 'read four lines', and write them out as four columns:
 
@@ -453,7 +453,7 @@ cat top_1000_tab.txt
 ```
 c. Using 'awk' and working with data in columns
 
-The linux command 'awk' isvery useful and practical for text manipulation in bioinformatics, 'awk' works with data in tabular format (like the result files on the previous excersice. The name stands for Aho, Weinberger and Kernighan (yes, [Brian Kernighan]ttps://www.cs.princeton.edu/~bwk/()), the authors of the language, which was started in 1977.
+The linux command 'awk' isvery useful and practical for text manipulation in bioinformatics, 'awk' works with data in tabular format (like the result files on the previous excersice. The name stands for Aho, Weinberger and Kernighan (yes, [Brian Kernighan](https://www.cs.princeton.edu/~bwk/)), the authors of the language, which was started in 1977.
 
 
 
