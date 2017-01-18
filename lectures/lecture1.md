@@ -170,7 +170,14 @@ cat text1.txt > text2.txt            ### Print file1.txt to file2.txt
 nano text2.txt                       ### Use nano to view file2.txt
 
 ```
+b. Use the symbol *>>* to redirect the output of a command to a file using 'append'
 
-
-
+```bash
+cat file1.txt >> file2.txt           ### Append file1.txt to file2.txt
+nano file2.txt                       ### View file2.txt
+```
+c. Use the symbol *<* to redirect the input
+```bash
+cat < file1.txt                      ### Print file1.txt to screen
+```
 
