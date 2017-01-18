@@ -202,22 +202,160 @@ tail -20 SRR001655.fastq             ### Show the last 20 lines of the file
 b. Pattern Search with 'grep'. The grep command searches specified files or other input(stdin) for patterns matching a given expression(s).
 
 ```bash
-> cat list1.txt                      ### See the contents of file list1.txt
+$ cat list1.txt                      ### See the contents of file list1.txt
 apples
 bananas
 plums
 carrots
  
-> cat list2.txt                      ### See the contents of file list2.txt
+$ cat list2.txt                      ### See the contents of file list2.txt
 Apple Sauce
 wild rice
 black beans
 kidney beans
 dry apples
  
-> grep apple list1.txt list2.txt     ### Search for "apple" in list1.txt and list2.txt
+$ grep apple list1.txt list2.txt     ### Search for "apple" in list1.txt and list2.txt
 list1.txt:apples
 list2.txt:dry apples
+```
+c. Finding a file
+```bash
+find . -name "*.txt"            ### Find all the files whose names ended with ".txt" under the current directory
+find . -mtime 0                 ### Find all the files modified today under the current directory
+find . -mtime +3                ### Find all the files modified more than 3 days ago under the current directory
+find . -mmin -30                ### Find all the files modified in the last 30 minutes
+find . -type d -name "ex*"      ### Find all the folders whose name starts with ex
+```
+d. Text replacement and text operation: cat, sed, tr, and rev
+```bash
+$ cat list2.txt                                ### See the contents of file list2.txt
+Apple Sauce
+wild rice
+black beans
+kidney beans
+dry apples
+ 
+ 
+$ cat list2.txt | sed 's/bean/button/g'       ### Replace bean with button
+Apple Sauce
+wild rice
+black buttons
+kidney buttons
+dry apples
+ 
+$ cat list2.txt | tr /a-z/ /A-Z/              ### Change lower case to upper case
+APPLE SAUCE
+WILD RICE
+BLACK BEANS
+KIDNEY BEANS
+DRY APPLES
+ 
+ 
+$ echo 'attgctcgat' | tr /atgc/ /tacg/ | rev  ### Find a complement DNA sequence and then reverse it
+atcgagcaat
+```
+
+e. Table manipulation: sort, uniq, cut, awk, and paste
+
+```bash
+$ cat table.txt                                      ### show the contents on table.txt
+ CHR          SNP         BP   A1      C_A      C_U   A2        CHISQ            P           OR
+  19   rs10401969   19268718    C      222      890    T      0.03462       0.8524       0.9857
+   1   rs10873883   76734548    G      934     3811    A       0.5325       0.4656       0.9691
+   1   rs11589256  214196749    C      271     1084    T      0.01928       0.8896       0.9902
+  15   rs10401369   19268718    C      232      890    T      0.03232       0.2524       0.1157
+  11   rs10873487  767334548    G      964     3811    A       0.5525       0.2356       0.2391
+  13   rs11589552 2014196749    C      221     1184    T      0.01878       0.8796       0.1202
+ 
+  ### Note that the header line is not showing properly aligned with the contents. Now try:
+
+$ cat table.txt | column -t
+CHR  SNP         BP         A1  C_A  C_U   A2  CHISQ    P       OR
+19   rs10401969  19268718   C   222  890   T   0.03462  0.8524  0.9857
+1    rs10873883  76734548   G   934  3811  A   0.5325   0.4656  0.9691
+1    rs11589256  214196749  C   271  1084  T   0.01928  0.8896  0.9902
+15   rs10401369  19268718   C   232  890   T   0.03232  0.2524  0.1157
+11   rs10873487  767334548  G   964  3811  A   0.5525   0.2356  0.2391
+ 
+ 
+$ sort -k1n table.txt  > table_sorted1.txt         ### sort the table by the first column in numerical order
+                                                   ### and write the results to a new file
+ 
+$ cat cat table_sorted1.txt
+CHR          SNP         BP   A1      C_A      C_U   A2        CHISQ            P           OR
+   1   rs10873883   76734548    G      934     3811    A       0.5325       0.4656       0.9691
+   1   rs11589256  214196749    C      271     1084    T      0.01928       0.8896       0.9902
+  11   rs10873487  767334548    G      964     3811    A       0.5525       0.2356       0.2391
+  13   rs11589552 2014196749    C      221     1184    T      0.01878       0.8796       0.1202
+  15   rs10401369   19268718    C      232      890    T      0.03232       0.2524       0.1157
+  19   rs10401969   19268718    C      222      890    T      0.03462       0.8524       0.9857
+ 
+$ sort -k2 table.txt                               ### sort the table by the second column
+ 
+  15   rs10401369   19268718    C      232      890    T      0.03232       0.2524       0.1157
+  19   rs10401969   19268718    C      222      890    T      0.03462       0.8524       0.9857
+  11   rs10873487  767334548    G      964     3811    A       0.5525       0.2356       0.2391
+   1   rs10873883   76734548    G      934     3811    A       0.5325       0.4656       0.9691
+   1   rs11589256  214196749    C      271     1084    T      0.01928       0.8896       0.9902
+  13   rs11589552 2014196749    C      221     1184    T      0.01878       0.8796       0.1202
+ CHR          SNP         BP   A1      C_A      C_U   A2        CHISQ            P           OR
+ 
+#### Note that the header is now at the end of the table, we can fix it with 'awk':
+
+$ awk 'NR==1;NR>1{print $0 | "sort -k2"}' table.txt | column -t
+ CHR          SNP         BP   A1      C_A      C_U   A2        CHISQ            P           OR
+  15   rs10401369   19268718    C      232      890    T      0.03232       0.2524       0.1157
+  19   rs10401969   19268718    C      222      890    T      0.03462       0.8524       0.9857
+  11   rs10873487  767334548    G      964     3811    A       0.5525       0.2356       0.2391
+   1   rs10873883   76734548    G      934     3811    A       0.5325       0.4656       0.9691
+   1   rs11589256  214196749    C      271     1084    T      0.01928       0.8896       0.9902
+  13   rs11589552 2014196749    C      221     1184    T      0.01878       0.8796       0.1202
+ 
+$ cut -f1,2,3,5 table.txt                ####Extract columns 1, 2, 3, and 5 from table.txt
+CHR     SNP             BP              C_A
+19      rs10401969      19268718        222
+1       rs10873883      76734548        934
+1       rs11589256      214196749       271
+15      rs10401369      19268718        232
+11      rs10873487      767334548       964
+ 
+### The paste command is used to align files side-by-side, merging records from each file respectively.
+$ paste table.txt list1.txt | column -t
+CHR  SNP         BP         A1  C_A  C_U   A2  CHISQ    P       OR      apples
+19   rs10401969  19268718   C   222  890   T   0.03462  0.8524  0.9857  bananas
+1    rs10873883  76734548   G   934  3811  A   0.5325   0.4656  0.9691  plums
+1    rs11589256  214196749  C   271  1084  T   0.01928  0.8896  0.9902  carrots
+15   rs10401369  19268718   C   232  890   T   0.03232  0.2524  0.1157
+11   rs10873487  767334548  G   964  3811  A   0.5525   0.2356  0.2391
+ 
+$ cat p1.txt           ### See the contents of file p1.txt
+IBM
+MSFT
+Apple
+SAP
+Yahoo
+ 
+$ cat p2.txt          ### See the contents of file p2.txt
+25.23
+234.02
+23.03
+11.22
+15.8
+ 
+$ paste p1.txt p2.txt   ### Note what happens when we paste p1.txt and p2.txt
+IBM     25.23
+MSFT    234.02
+Apple   23.03
+SAP     11.22
+Yahoo   15.8
+ 
+> paste -d ":" p1.txt p2.txt  ###P aste the files delimited by ':'  
+IBM:25.23
+MSFT:234.02
+Apple:23.03
+SAP:11.22
+Yahoo:15.8
 ```
 
 
