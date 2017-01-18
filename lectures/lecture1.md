@@ -199,6 +199,26 @@ head -20 SRR001655.fastq             ### Show the first 20 line of the file
 tail -20 SRR001655.fastq             ### Show the last 20 lines of the file
 
 ```
+b. Pattern Search with 'grep'. The grep command searches specified files or other input(stdin) for patterns matching a given expression(s).
+
+```bash
+> cat list1.txt                      ### See the contents of file list1.txt
+apples
+bananas
+plums
+carrots
+ 
+> cat list2.txt                      ### See the contents of file list2.txt
+Apple Sauce
+wild rice
+black beans
+kidney beans
+dry apples
+ 
+> grep apple list1.txt list2.txt     ### Search for "apple" in list1.txt and list2.txt
+list1.txt:apples
+list2.txt:dry apples
+```
 
 
 
