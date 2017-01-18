@@ -152,7 +152,7 @@ scp example1.txt username@tarbell.cri.uchicago.edu:.
 ```
 :bulb: The [hypexr.org](http://www.hypexr.org/linux_scp_help.php) website has nice list of examples on how to use secure copy (also some [computer comics and cartoons](http://www.hypexr.org/comics.php))
 
-:1: You can use *wget* to get a file from the internet directly to your working directory in Linux
+:b: You can use *wget* to get a file from the internet directly to your working directory in Linux
 ```bash
 wget http://downloads.yeastgenome.org/curation/chromosomal_feature/saccharomyces_cerevisiae.gff
 ```
