@@ -535,15 +535,22 @@ sed 's/N/0/g' top_1000_tab.txt
     A description of the GFF format is available [here](http://www.sequenceontology.org/gff3.shtml)
 
 2. Using the Linux command line, asnwer the following questions:
+```
     a. How many genes are there in the data?
+    
     b. How many genes on chromosome 2?
+    
     c. How many mRNAs are there on chromosome 10?
+    
     d. Describe what the following command do: sed '/#/d' saccharomyces_cerevisiae.gff > features.gff
+    
     e. How many features (lines) are there in the file features.gff
+    
     f. Describe what the following command do: cut -f 1 features.gff | sort | uniq -c | sort -k1n
+    
     g. Which chromosome is the longest and which one is the shortest?
     h. Describe what the following command do: sed 's/chrI/chr1/g' features.gff > new_features.gff
-
+```
 :point_right: Send your homework via e-mail, your homework should have the answers and commands used for each item. 
     
 ## Week 1 Challange :+1:
