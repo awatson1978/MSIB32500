@@ -501,9 +501,15 @@ cat SRR001655.fastq | paste - - - - | awk '{print ">"$1,$2,"\n"$3}'
 ```
 Now try saving the result of the conversion on a new file.
 
+**d. Text manipulation with 'sed' **
+ 
+sed stands for **s**tream **ed**itor is a stream oriented editor which was created exclusively for executing scripts. Thus all the input you feed into 'sed' passes through and goes to the screen (STDOUT). In other words,'sed' does not change the input file.
 
+The general syntax for sed is:
 
-
+```
+/pattern/action
+```
 
 
 
