@@ -521,6 +521,6 @@ sed 's/N/0/g' top_1000_tab.txt
 Check that the orininal top_1000_tab.txt  file was not altered.
 
 ## Week 1 Homework
-
+:house:
 
 
