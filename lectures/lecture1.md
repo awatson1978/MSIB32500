@@ -470,8 +470,13 @@ awk '/search pattern/{Actions}' filename
 ```bash
 awk '/N/{print}' top_1000_tab.txt
 ```
+This will prints out all lines in the file that contain an N (i.e. when you want to know if your sequence failed!!)
 
+Now explore the result of the following command:
 
+```bash
+awk '/N/{print $1,"\t",$2,"\t",$3,"\t",$4}' top_1000_tab.txt
+```
 
 
 
