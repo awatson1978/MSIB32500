@@ -526,7 +526,7 @@ sed 's/N/0/g' top_1000_tab.txt
 
 
 
-## Week 1 Homework :house:
+## Week 1 Homework: :house:
 
 1. Download the Generic Feature Format (GFF) version of the Saccharomyces Cerevisiae yeast genome to your home directory. 
 
