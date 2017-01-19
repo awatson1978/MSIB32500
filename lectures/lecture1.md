@@ -524,8 +524,8 @@ Check that the orininal top_1000_tab.txt  file was not altered.
 
 1. Download the Generic Feature Format (GFF) version of the Saccharomyces Cerevisiae yeast genome to hour home directory. 
 
-The genome is available at: http://downloads.yeastgenome.org/curation/chromosomal_feature/saccharomyces_cerevisiae.gff 
+    The genome is available at: http://downloads.yeastgenome.org/curation/chromosomal_feature/saccharomyces_cerevisiae.gff 
 
-A description of the GFF format is available [here](http://www.sequenceontology.org/gff3.shtml)
+    A description of the GFF format is available [here](http://www.sequenceontology.org/gff3.shtml)
 
 
