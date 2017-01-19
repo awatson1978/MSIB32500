@@ -484,6 +484,28 @@ Now explore the result of the following command:
 ```bash
 awk $3 '/N/{print $1,"\t",$3}' top_1000_tab.txt
 ```
+For each line, search for 'N' in the 3th. column, if N is found, print the first and thirth column separed by a tab. Now try:
 
-What we are asking is: For each line, search for 'N' in the 3th. column, if N is found, print the first and thirth column separed by a tab 
+```bash
+awk $2 '/389/{print $1,"\t",$2}' top_1000_tab.txt
+```
+Yes, you guessed right, search for 389 in the second column and print columns 1 and 2.
+
+Here is an example on how to count the number of fail reads in our sequence file:
+```bash
+awk '$3 ~ /N/ {print $1}' top_1000_tab.txt | wc -l
+```
+The follwong command will convert FASTQ to FASTA file format:
+```bash
+cat SRR001655.fastq | paste - - - - | awk '{print ">"$1,$2,"\n"$3}'
+```
+Now try saving the result of the conversion on a new file.
+
+
+
+
+
+
+
+
 
