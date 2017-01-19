@@ -556,6 +556,8 @@ sed 's/N/0/g' top_1000_tab.txt
 ## Week 1 Challange:
 
 :red_circle: 
+- Follow the tutorial: CloudEnviromentSetup.pdf to learn how to confirure your owm Elastic Cloud Computing instance (EC2) using  Amazon Web Services (AWS). 
+- Send via e-mal the IP address of your cloud instance.
 
 
 
