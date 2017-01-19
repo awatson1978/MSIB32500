@@ -553,9 +553,9 @@ sed 's/N/0/g' top_1000_tab.txt
 ```
 :point_right: Send your homework via e-mail, your homework should have the answers and commands used for each item. 
     
-## Week 1 Challange:
+:red_circle: ## Week 1 Challange:
 
-:red_circle: 
+
 - Follow the tutorial: [CloudEnviromentSetup.pdf] (https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/cheatsheets/CloudEnviromentSetup.pdf) to learn how to confirure your owm Elastic Cloud Computing instance (EC2) using  Amazon Web Services (AWS). 
 - Send me an e-mal with the IP address of your cloud instance.
 
