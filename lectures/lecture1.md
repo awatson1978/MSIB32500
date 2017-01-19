@@ -553,7 +553,9 @@ sed 's/N/0/g' top_1000_tab.txt
 ```
 :point_right: Send your homework via e-mail, your homework should have the answers and commands used for each item. 
     
-## Week 1 Challange :+1:
+## Week 1 Challange:
+
+
 
 
 
