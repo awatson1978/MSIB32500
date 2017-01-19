@@ -510,6 +510,15 @@ The general syntax for sed is:
 ```
 /pattern/action
 ```
+Where 'pattern' is a regular expression, and action is one of the following: 'p'= Prints the line; 'd'= Deletes the line; and
+'s/pattern1/pattern2/' = Substitutes the first occurrence of pattern1 with pattern2. If 'pattern' is omitted, action is performed for every line.
+
+Explore the result of the following comand:
+
+```bash
+sed 's/N/0/g' top_1000_tab.txt 
+```
+Check that the orininal top_1000_tab.txt  file was not altered.
 
 
 
