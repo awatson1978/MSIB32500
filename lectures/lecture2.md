@@ -1,5 +1,5 @@
 
-*Introduction to High Performance Computing* 
+# Introduction to High Performance Computing* 
 
 **Center for Research Informatics, University of Chicago**
 
