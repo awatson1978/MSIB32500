@@ -528,4 +528,6 @@ Check that the orininal top_1000_tab.txt  file was not altered.
 
     A description of the GFF format is available [here](http://www.sequenceontology.org/gff3.shtml)
 
+2. Using the Linux command line, asnwer the following questions:
+    a. How many genes are there in the data? (hint: you could use grep)
 
