@@ -453,11 +453,11 @@ cat top_1000_tab.txt
 ```
 **c. Using 'awk' to work with data in columns**
 
-The linux command 'awk' isvery useful and practical for text manipulation in bioinformatics, 'awk' works with data in tabular format (like the result files on the previous excersice. The name stands for Aho, Weinberger and Kernighan (yes, [Brian Kernighan](https://www.cs.princeton.edu/~bwk/)), the authors of the language, which was started in 1977.
+The linux command 'awk' is very useful and practical for text manipulation in bioinformatics, 'awk' works with data in tabular format (like the result files on the previous excersice). The name stands for Aho, Weinberger and Kernighan (yes, [Brian Kernighan](https://www.cs.princeton.edu/~bwk/)), the authors of the language, which started in 1977.
 
 What is it that awk does?
 
-awk is a utility/language designed for data extraction awk is often used with 'sed' to perform useful and practical text manipulation chores. One of the most simple and popular uses of 'awk' is selecting a column from a text file or other command's output. 
+awk is a utility/language designed for data extraction awk is often used with 'sed' to perform useful and practical text manipulation tasks in bioinformatics. One of the most simple and popular uses of 'awk' is selecting a column from a text file, or other command's output. 
 
 The general syntax of awk is:
 
@@ -477,6 +477,13 @@ Now explore the result of the following command:
 ```bash
 awk '/N/{print $1,"\t",$2,"\t",$3,"\t",$4}' top_1000_tab.txt
 ```
+Note the effect of $1, $2, $3 and $4 (change the order in the command). The '\t' is a 'scape' sequence the ‘\t’ is an escape sequence, used to represent a tab delimited. Other scape sequences are: '\n' = new line; '\r' = carriage return; '\\' = a literal backslash.
 
+Now explore the result of the following command:
 
+```bash
+awk $3 '/N/{print $1,"\t",$3}' top_1000_tab.txt
+```
+
+What we are asking is: For each line, search for 'N' in the 3th. column, if N is found, print the first and thirth column separed by a tab 
 
