@@ -19,6 +19,8 @@ Moore's law refers to an observation made by Intel co-founder Gordon Moore in 19
 The figure available on the link bellow shows the number of trasistors on integrated circuits chips from 1971 to 2016: 
 [Moore's law]( https://ourworldindata.org/wp-content/uploads/2013/05/Transistor-Count-over-time.png)
 
+[[https://ourworldindata.org/wp-content/uploads/2013/05/Transistor-Count-over-time.png]]
+
 **Measures of processor performance**
 
 Instructions per second: 
