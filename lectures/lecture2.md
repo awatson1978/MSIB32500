@@ -23,14 +23,14 @@ The figure available on the link bellow shows the number of trasistors on integr
 
 Instructions per second: 
 
-- MIPS: A million instructions per second.
+*- MIPS:* A million instructions per second.
 - GIPS:  A billion instructions per second
 - TIPS:  A trillion instructions per second
 - PIPS: A Peta (10^5) instructions per second
 
 Floating-point operations per second:
 
-- MFLOPS A million floating-point operations per second (FLOPS)
-- GFLOPS A GigaFlop is a billion FLOPS.
+- MFLOPS: A million floating-point operations per second (FLOPS)
+- GFLOPS: A GigaFlop is a billion FLOPS.
 - TFLOPS: A TeraFlops is a trillion FLOPS one trillion floating-point operations per second
 - PFLOPS: A Peta (10^5) floating-point operations per second
