@@ -23,7 +23,7 @@ The figure available on the link bellow shows the number of trasistors on integr
 
 Instructions per second: 
 
-**- MIPS:** A million instructions per second.
+**MIPS:** A million instructions per second.
 - GIPS:  A billion instructions per second
 - TIPS:  A trillion instructions per second
 - PIPS: A Peta (10^5) instructions per second
