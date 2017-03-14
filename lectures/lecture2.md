@@ -48,9 +48,13 @@ Obviously, **there is a limit to the speed of a single processor*** (the speed-o
 
 The only alternative for **efficient** analysis of BIG DATA is paralellel and/or distributed computing.
 
-**Biologist are now joining the bid data club***
+**Biologist are now joining the bid data club**
 
-Due to available high-throughput genomics technologies (NGS). 
+Due to available high-throughput genomics technologies (NGS), in January this year, Illumina was the first companny to anounce that their technology will be capable of sequencing a human genome for $1000 (with their HiSeq X 10 technology, a lab would be capable of sequencing 18,000 human genomes per year. Breaking down the price of an individual genome). 
+
+How much data is produced:
+
+![Illumina sequencing platforms] (https://www.illumina.com/systems/sequencing-platforms.html)
 
 Two examples: 
 - The European Bioinformatics Institute _(EBI)_ in the UK currently stores **20 petabytes of data** and back-ups about genes, proteins and small molecules. 
