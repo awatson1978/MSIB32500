@@ -41,7 +41,7 @@ Floating-point operations per second:
 
 - MFLOPS: A million floating-point operations per second (FLOPS)
 - GFLOPS: A GigaFlop is a billion FLOPS.
-- TFLOPS: A TeraFlops is a trillion FLOPS one trillion floating-point operations per second
+- TFLOPS: A TeraFlops is a trillion FLOPS, one trillion floating-point operations per second
 - PFLOPS: A Peta (10^5) floating-point operations per second
 
 Obviously, **there is a limit to the speed of a single processor*** (the speed-of-light), however the need for **FLOPS** in science and engineering **continue to grow exponetially** (wheather forecast, astrophisics, Monte Carlo simulation of nuclear reactors, etc.)
@@ -60,9 +60,9 @@ https://www.illumina.com/systems/sequencing-platforms.html
 - The European Bioinformatics Institute _(EBI)_ in the UK currently stores **20 petabytes of data** and back-ups about genes, proteins and small molecules. 
 - The Genomics Data Commons initiative _(GDC)_ at the University of Chicago, **currently host 5.42 petabytes of data and 87.96 Terabytes of RAM).** See the GDC's infrastructure statistics at: (https://gdc-portal.nci.nih.gov)
 
-## 2. Paradigms for Parallel Computation: 
+## 2. Hardware Paradigms for Parallel Computation: 
 
-***CPU Design: Multiple-Core Processor***
+**CPU Design: Multiple-Core Processor**
 
 A **multi-core processor** is a single computing component with *two or more independent actual processing units* (called "cores"), which are units that read and execute program instructions.
 
@@ -71,6 +71,30 @@ Although multicore chips were designed for game playing, they are becomming more
 As an example: The *Sparc64-IXfx chip* has 16 Sparc cores that run at 1.85GHz and delivers 236 GFLOPS of double-precision floating point operations. Bellow the real architectural design of the chip:
 
 ![Fujitsu's Sparc64-IXfx processor](https://regmedia.co.uk/2011/11/20/fujitsu_sparc64_ixfx_chip.jpg)
+
+**High Performance Computing** 
+
+High-performance computing (HPC) is the use of **parallel processing** for running advanced application programs efficiently, reliably and quickly. The term applies especially to systems that function **above a TFLOP** or 10^12 floating-point operations per second. The term HPC is not a synonym for supercomputing, technically a supercomputer is a system that performs at the currently highest operational rate of more than a PFLOPS (10^15 floating-point operations per second).
+
+
+
+
+**Cloud Computing**
+
+
+
+## 3. Programming Paradigms for Parallel Computation: 
+
+- Dive and conquer - Divide the computation
+
+Using Grid technology for computationally intensive applied bioinformatics analyses
+
+http://www.bioinfo.de/isb/2006060046/main.html
+
+- Divide the data
+
+
+- Access more memmory
 
 
 
