@@ -44,6 +44,6 @@ Floating-point operations per second:
 - TFLOPS: A TeraFlops is a trillion FLOPS one trillion floating-point operations per second
 - PFLOPS: A Peta (10^5) floating-point operations per second
 
-Obviously, there is a limit to the speed of a single processor __(the speed-of-light)__.
+Obviously, there is a limit to the speed of a single processor _(the speed-of-light)_.
 
 
