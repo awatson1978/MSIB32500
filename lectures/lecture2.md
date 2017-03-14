@@ -45,6 +45,6 @@ Floating-point operations per second:
 - PFLOPS: A Peta (10^5) floating-point operations per second
 
 Obviously, there is a limit to the speed of a single processor _(the speed-of-light)_, however the need for *FLOPS* in science and engineering continue to grow exponetially (wheather forecast, astrophisics, Monte Carlo simulation of nuclear reactors, etc.)
-Biologist are now joining the __bid data club
+Biologist are now joining the __bid data club__
 
 
