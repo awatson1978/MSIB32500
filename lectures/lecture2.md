@@ -54,7 +54,7 @@ Due to available high-throughput genomics technologies (NGS), in January this ye
 
 How much data is produced:
 
-![Illumina sequencing platforms] (https://www.illumina.com/systems/sequencing-platforms.html)
+[Illumina sequencing platforms] (https://www.illumina.com/systems/sequencing-platforms.html)
 
 Two examples: 
 - The European Bioinformatics Institute _(EBI)_ in the UK currently stores **20 petabytes of data** and back-ups about genes, proteins and small molecules. 
