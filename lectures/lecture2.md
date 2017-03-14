@@ -18,7 +18,7 @@ April - June 2017; Saturdays 9:00AM - 12:00PM
 Moore's law refers to an observation made by Intel co-founder Gordon Moore in 1965. He noticed that the number of transistors per square inch on integrated circuits had doubled every year since their invention. Moore's law predicts that this trend will continue into the foreseeable future ***the number of transistors per square inch has since doubled approximately every 18 months.***
 The figure bellow shows the number of trasistors on integrated circuits chips from 1971 to 2016: 
 
-![Moore's law]( https://ourworldindata.org/wp-content/uploads/2013/05/Transistor-Count-over-time.png)
+![Moore's law](https://ourworldindata.org/wp-content/uploads/2013/05/Transistor-Count-over-time.png)
 
 
 Note: Exponential growth, it is unlikely to continue indefinitely, some new studie are showing that physical limitations could be reached this year - **2017**
@@ -60,7 +60,15 @@ https://www.illumina.com/systems/sequencing-platforms.html
 - The European Bioinformatics Institute _(EBI)_ in the UK currently stores **20 petabytes of data** and back-ups about genes, proteins and small molecules. 
 - The Genomics Data Commons initiative _(GDC)_ at the University of Chicago, **currently host 5.42 petabytes of data and 87.96 Terabytes of RAM).** See the GDC's infrastructure statistics at: (https://gdc-portal.nci.nih.gov)
 
-## 2. Types of Parallelism: 
+## 2. Paradigms for Parallel Computation: 
+
+***CPU Design: Multiple-Core Processor
+
+A **multi-core processor** is a single computing component with *two or more independent actual processing units* (called "cores"), which are units that read and execute program instructions.
+
+Although multicore chips were designed for game playing, they are becomming more and more popular in scientific computing. Now days, dual–core, quad–core, or even sixteen–core chips are commun on modern computers. These chips attain more integrated speed with less heat and more energy efficiency than single–core.
+
+![Fujitsu's Sparc64-IXfx processor](https://regmedia.co.uk/2011/11/20/fujitsu_sparc64_ixfx_chip.jpg)
 
 
 
