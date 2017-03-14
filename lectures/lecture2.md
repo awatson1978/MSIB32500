@@ -62,11 +62,13 @@ https://www.illumina.com/systems/sequencing-platforms.html
 
 ## 2. Paradigms for Parallel Computation: 
 
-***CPU Design: Multiple-Core Processor
+***CPU Design: Multiple-Core Processor***
 
 A **multi-core processor** is a single computing component with *two or more independent actual processing units* (called "cores"), which are units that read and execute program instructions.
 
 Although multicore chips were designed for game playing, they are becomming more and more popular in scientific computing. Now days, dual–core, quad–core, or even sixteen–core chips are commun on modern computers. These chips attain more integrated speed with less heat and more energy efficiency than single–core.
+
+As an example: The *Sparc64-IXfx chip* has 16 Sparc cores that run at 1.85GHz and delivers 236 GFLOPS of double-precision floating point operations. Bellow the real architectural design of the chip:
 
 ![Fujitsu's Sparc64-IXfx processor](https://regmedia.co.uk/2011/11/20/fujitsu_sparc64_ixfx_chip.jpg)
 
