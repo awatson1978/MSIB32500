@@ -52,12 +52,13 @@ The only alternative for **efficient** analysis of BIG DATA is paralellel and/or
 
 Due to available high-throughput genomics technologies (NGS), in January this year, Illumina was the first companny to anounce that their technology will be capable of sequencing a human genome for $1000 (with their HiSeq X 10 technology, a lab would be capable of sequencing 18,000 human genomes per year. Breaking down the price of an individual genome). 
 
-How much data is produced:
+How much data is produced? takea look at the troughput of the latest Illumina sequencing platforms: 
 
-[Illumina sequencing platforms] (https://www.illumina.com/systems/sequencing-platforms.html)
+https://www.illumina.com/systems/sequencing-platforms.html
 
-Two examples: 
+**Two examples:**
 - The European Bioinformatics Institute _(EBI)_ in the UK currently stores **20 petabytes of data** and back-ups about genes, proteins and small molecules. 
 - The Genomics Data Commons initiative _(GDC)_ at the University of Chicago, **currently host 5.42 petabytes of data and 87.96 Terabytes of RAM).** See the GDC's infrastructure statistics at: (https://gdc-portal.nci.nih.gov)
+
 
 
