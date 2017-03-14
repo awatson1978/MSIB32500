@@ -44,11 +44,16 @@ Floating-point operations per second:
 - TFLOPS: A TeraFlops is a trillion FLOPS one trillion floating-point operations per second
 - PFLOPS: A Peta (10^5) floating-point operations per second
 
-Obviously, there is a _limit_ to the speed of a single processor _(the speed-of-light)_, however the need for *FLOPS* in science and engineering _continue to grow exponetially_ (wheather forecast, astrophisics, Monte Carlo simulation of nuclear reactors, etc.)
-Biologist are now joining the __bid data club__ due to available high-throughput genomics technologies (NGS). As an example: 
-The European Bioinformatics Institute _(EBI)_ in the UK currently stores 20 petabytes of data and back-ups about genes, proteins and small molecules. 
-The Genomics Data Commons initiative __(GDC)__ at the University of Chicago, currently host 5.42 petabytes of data and 87.96 Terabytes of RAM). 
+Obviously, **there is a limit to the speed of a single processor*** (the speed-of-light), however the need for **FLOPS** in science and engineering **continue to grow exponetially** (wheather forecast, astrophisics, Monte Carlo simulation of nuclear reactors, etc.)
 
-See the GDC's infrastructure statistics at: (https://gdc-portal.nci.nih.gov)
+The only alternative for **efficient** analysis of BIG DATA is paralellel and/or distributed computing.
+
+**Biologist are now joining the bid data club***
+
+Due to available high-throughput genomics technologies (NGS). 
+
+Two examples: 
+- The European Bioinformatics Institute _(EBI)_ in the UK currently stores **20 petabytes of data** and back-ups about genes, proteins and small molecules. 
+- The Genomics Data Commons initiative _(GDC)_ at the University of Chicago, **currently host 5.42 petabytes of data and 87.96 Terabytes of RAM).** See the GDC's infrastructure statistics at: (https://gdc-portal.nci.nih.gov)
 
 
