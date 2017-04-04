@@ -83,6 +83,8 @@ High-performance computing (HPC) is the use of **parallel processing** for runni
 
 Cloud Computing: Computing and software resources that are delivered on demand, as service.
 
+MSIB32500/cheatsheets/Cloud.jpeg
+
 Software as a Service (SaaS) applications are hosted by a vendor and made available to customers over the Internet
 Platform as a Service (PaaS) is a way to rent hardware, operating systems, storage and network capacity (and all associated service) over the internet
 Infrastructure as a Service (IaaS)  an organization outsources the equipment used to support operations, including storage, hardware, servers and networking components. The service provider owns the equipment and is responsible for housing, running and maintaining it. The client typically pays on a per-use basis
