@@ -124,22 +124,21 @@ Cloud Computing: on-demand access to a shared pool of configurable computing res
 
 - Split the data
 
-For an **'embarrassingly parallel problems'** (also known as perfectly parallel or pleasingly parallel), the obvious strategy is to split the big data in small manageable chunks.  
+For an **'embarrassingly parallel problems'** (also known as perfectly parallel or pleasingly parallel), the obvious strategy is to split the big data in small manageable chunks. This startegy generally apply to 'data intensive' problems. A clasic example of this kind of problems in in bioinformatics is the use of the BLAST algorithm on huge amouns of sequencing data. See [Applications of Grid Computing in Genetics and Proteomics](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.458.8893&rep=rep1&type=pdf) 
 
-My work: **GRID-BLAST** Using Grid technology for computationally intensive applied bioinformatics analyses
+By spliting the data and distributing the execution of the BLAST algorithm over thousand of Grid 'workers', the computational runtime of BLAST over big data can be reduced to manageable and/or acepatble.  See an application of the **GRID-BLAST** algorithm at [Using Grid technology for computationally intensive applied bioinformatics analyses](http://www.bioinfo.de/isb/2006060046/main.html)
 
-http://www.bioinfo.de/isb/2006060046/main.html
-
-And The epitope space of the human proteome
-
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2271163/ 
+As a result [The epitope space of the human proteome](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2271163/) was defined. 
 
 - Distribute the computational load 
+
+For 'computationally intensive' tasks (i.e. **searching for prime numbers**, **calculating large factorials**,  quantum chromodynamics, astrophysical and cosmological simulations, weather simulation, etc.), and for tasks were there is **strong 'data interdependence'** a Message Passing Interface (MPI) strategy is needed. MPI is a communication protocol for programming parallel computers. Both point-to-point and collective communication are supported. MPI is a message-passing application programmer interface, together with protocol and semantic specifications for how its features must behave in any implementation. MPI's goals are high performance, scalability, and portability. A good read for an introduction to programming parallel systems that use the MPI: [Parallel Programming with MPI](http://www.cs.usfca.edu/~peter/ppmpi/)
+
 
 
 - Access more memmory
 
-
+(Try multiplying two big matrices)
 
 ## 4. Programing languages for Distributed Computing:
 
