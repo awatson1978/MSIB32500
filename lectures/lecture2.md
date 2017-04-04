@@ -127,12 +127,12 @@ http://www.bioinfo.de/isb/2006060046/main.html
 
 **Programing languages for Distributed Computing:**
 
-[BigDataScript] https://pcingola.github.io/BigDataScript/
+[BigDataScript](https://pcingola.github.io/BigDataScript/)
 
-Develop ONE data pipeline and run exactly the same script everywhere. No matter how big the computer. Created by: Pablo Cingolani > Director of IT and Bioinformatics at Kew Inc.
-Your program runs on a 25,000 core cluster or a single CPU laptop
+Develop ONE data pipeline and run exactly the same script everywhere. No matter how big the computer. Created by: [Pablo Cingolani](https://www.linkedin.com/in/pablocingolani/) Director of IT and Bioinformatics at Kew Inc.
+Your program/pipeline will runs on a 25,000 cores cluster or a single CPU laptop.
 
-
+![BigDataScript](https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/cheatsheets/BigDataScript.jpeg)
 
 
 
