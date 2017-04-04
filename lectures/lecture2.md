@@ -110,11 +110,11 @@ Cloud Computing: on-demand access to a shared pool of configurable computing res
 - Charge model: I/O fees 
 
 
-## 3. Programming Paradigms for Parallel Computation: 
+## 3. Programming strategies for Parallel Computation: 
 
-- Dive and conquer - Divide the computation
+- Divide the computation
 
-Using Grid technology for computationally intensive applied bioinformatics analyses
+My work: Using Grid technology for computationally intensive applied bioinformatics analyses
 
 http://www.bioinfo.de/isb/2006060046/main.html
 
