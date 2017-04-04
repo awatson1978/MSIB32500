@@ -21,7 +21,18 @@ April - June 2017; Saturdays 9:00AM - 12:00PM
 
 In MacOS open the Terminal
 
-:pushpin: If you are using a Windows machine (other than Windows 10 Anniversary Edition), you need install [MobaXter](http://mobaxterm.mobatek.net/)
+:pushpin:
+**Microsoft Windows user** you will need to install a tool for remote computing: [MobaXterm](http://mobaxterm.mobatek.net) and/or
+[PuTTY](http://www.putty.org). PuTTY user go to: http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html locate the apropiate binary file (executable putty.exe file) for your hardware (32bits or 64 bits laptop). Place this file on your destop (or other folder that you can access easyly). You will need to 'double-click' this file each time you need to access it.
+
+Open a PuTTY session, on 'Host Name (or IP address)' type: **tarbell.cri.uchicago.edu**,  select SSH as the Connection Type, verify the port number in the'Port' Box is **22**. Press the 'Open' button, then type in the provided **username and password** when prompted. Type **yes** if you are prompted to accept a key before entering username.
+
+**Login**
+
+For MacOS or Unix/Linux users:
+1. Open a terminal session.
+2. Connect to the login node of TARBELL cluster:
+
 
 ```bash
 ssh username@tarbell.cri.uchicago.edu
