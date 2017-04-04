@@ -559,7 +559,6 @@ sed 's/N/0/g' top_1000_tab.txt
 - Follow the tutorial: [CloudEnviromentSetup.pdf] (https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/cheatsheets/CloudEnviromentSetup.pdf) to learn how to confirure your owm Elastic Cloud Computing instance (EC2) using  Amazon Web Services (AWS). 
 - Send me an e-mal with the IP address of your cloud instance.
 
-Test
 
 
     
