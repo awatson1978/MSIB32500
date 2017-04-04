@@ -141,6 +141,8 @@ Recomended reading: [rapidGSEA](https://bmcbioinformatics.biomedcentral.com/arti
 There are tasks that are both computational and data intensive, they usually need to have simultaneous access to the full data model
 (i.e. multiplying two big matrices), to compute those kind of problems, it is needed to access HPC resources with nodes that share large amouns of RAM memmory. In Bioinformatics a commun problem that often needs such setting is **De novo transcriptome assembly** from RNA-Seq data this task ususallu demand ~1G of RAM per ~1M pairs Illumina reads (i.e. tools like: [SOAPdenovo-trans](http://soap.genomics.org.cn/SOAPdenovo-Trans.html), [TransABYSS](https://github.com/bcgsc/transabyss) and [Trinity](https://github.com/trinityrnaseq/trinityrnaseq/wiki))
 
+See Robert Bukowski's Trinity workshop and hands-on exercises at: http://cbsu.tc.cornell.edu/lab/doc/Trinity_workshop_Part1.pdf 
+
 ## 4. Programing languages for Distributed Computing:
 
 [BigDataScript](https://pcingola.github.io/BigDataScript/)
@@ -150,6 +152,7 @@ Your program/pipeline will runs on a 25,000 cores cluster or a single CPU laptop
 
 ![BigDataScript](https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/cheatsheets/BigDataScript.jpeg)
 
+It is of course also possible to develop scripts for running jobs on HPC and/or multi-core processors using other scripting languages such as PERL, python, R, C++, and others.
 
 **Running a Job on HPC using Portable Batch System (PBS)**
 
