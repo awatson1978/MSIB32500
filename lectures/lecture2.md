@@ -122,7 +122,7 @@ Cloud Computing: on-demand access to a shared pool of configurable computing res
 
 ## 3. Programming strategies for Parallel Computation: 
 
-- Split the data
+- **Split the data
 
 For an **'embarrassingly parallel problems'** (also known as perfectly parallel or pleasingly parallel), the obvious strategy is to split the big data in small manageable chunks. This startegy generally apply to 'data intensive' problems. A clasic example of this kind of problems in in bioinformatics is the use of the BLAST algorithm on huge amouns of sequencing data. See [Applications of Grid Computing in Genetics and Proteomics](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.458.8893&rep=rep1&type=pdf) 
 
