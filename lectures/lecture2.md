@@ -80,7 +80,17 @@ High-performance computing (HPC) is the use of **parallel processing** for runni
 
 **GRID Computing**
 
-TEXT here
+**Aggregation** of computer resources **remotely located in multiple locations** to reach a common goal. Grid computing is distinguished from conventional HPC systems in: 
+
+- In Grid computing, each node can be set to perform a different task/application. 
+- Grid computers also tend to be more heterogeneous and geographically dispersed.
+- Grid sizes can be quite large
+
+Although a single grid can be dedicated to a particular application, commonly a grid is used for a variety of purposes. Grids are often constructed with general-purpose grid middleware software libraries. The idea of connecting heterogeneous computers together in a Grid was developed at the European Organization for Nuclear Research [CERN](https://home.cern/about).
+
+Grid enviroments consist at least of 3 main componets: the hardware, the middleware (like the Advanced Resource Connector ARC)  and the applications (like software).
+
+Recomened read on this topic: [The Grid: Blueprint for a New Computing Infrastructure] (https://books.google.com/books?id=ONRQAAAAMAAJ) by the University of Chicago Professor [Ian Foster](https://cs.uchicago.edu/directory/ian-foster)
 
 **Cloud Computing**
 
