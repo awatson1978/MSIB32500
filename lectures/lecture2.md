@@ -77,10 +77,28 @@ As an example: The *Sparc64-IXfx chip* has 16 Sparc cores that run at 1.85GHz an
 High-performance computing (HPC) is the use of **parallel processing** for running advanced application programs efficiently, reliably and quickly. The term applies especially to systems that function **above a TFLOP** or 10^12 floating-point operations per second. The term HPC is not a synonym for supercomputing, technically a supercomputer is a system that performs at the currently highest operational rate of more than a PFLOPS (10^15 floating-point operations per second).
 
 
-
+**GRID Computing**
 
 **Cloud Computing**
 
+Cloud Computing: Computing and software resources that are delivered on demand, as service.
+
+Software as a Service (SaaS) applications are hosted by a vendor and made available to customers over the Internet
+Platform as a Service (PaaS) is a way to rent hardware, operating systems, storage and network capacity (and all associated service) over the internet
+Infrastructure as a Service (IaaS)  an organization outsources the equipment used to support operations, including storage, hardware, servers and networking components. The service provider owns the equipment and is responsible for housing, running and maintaining it. The client typically pays on a per-use basis
+
+Advantages
+
+Pay as you go: Can be less expensive compared to buying installing and maintaining your own 
+Flexibility: Theoretical infinite scalability
+Easy Access: Can be used from any computer or device with an Internet connection
+Easy updates: Updates occur across the service
+
+Disadvantages
+
+Security Concerns
+Terms of Service
+Privacy Policies
 
 
 ## 3. Programming Paradigms for Parallel Computation: 
@@ -95,6 +113,22 @@ http://www.bioinfo.de/isb/2006060046/main.html
 
 
 - Access more memmory
+
+
+
+Programing languages for Distributed Computing:
+
+BigDataScript
+
+Develop ONE data pipeline and run exactly the same script everywhere. No matter how big the computer. Created by: Pablo Cingolani > Director of IT and Bioinformatics at Kew Inc.
+Your program runs on a 25,000 core cluster or a single CPU laptop
+
+
+
+
+
+
+
 
 
 
