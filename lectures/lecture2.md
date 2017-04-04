@@ -135,6 +135,13 @@ Your program/pipeline will runs on a 25,000 cores cluster or a single CPU laptop
 ![BigDataScript](https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/cheatsheets/BigDataScript.jpeg)
 
 
+**Running a Job on HPC using Portable Batch System (PBS)**
+
+To run a job on CRI's HPC cluster, you will need to set up a Portable Batch System (PBS) file. This PBS file defines the commands and cluster resources used for the job.  A PBS file is a simple text file that can be easily edited with a UNIX editor, such as vi, pico, or emacs. 
+
+**Submitting a Job**
+In order to use the HPC compute nodes, you must first log in to one of the head nodes, and submit a PBS job. The **qsub** command is used to submit a job to the PBS queue and to request additional resources. The **qstat** command is used to check on the status of a job already in the PBS queue. To simplify submitting a job, you can create a PBS script and use the qsub and qstat commands to interact with the PBS queue.
+
 
 
 
