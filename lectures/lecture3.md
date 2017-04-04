@@ -12,7 +12,7 @@ April - June 2017; Saturdays 9:00AM - 12:00PM
 
 - Learn how develop HPC batch scripts using the Linux shell to execute code and develop analysis pipelines to perform computationally expensive bioinformatics tasks
 
-## 1 Introduction
+## 1. Introduction
 
 In this hand-on tutorial, you will learn how to use CRI's High Performance Computing (HPC) cluster TARBELL to perfom basic Bioinformatics analysis. TARBELL is a cluster with 2640 cores running **Scientific Linux 6** Update 4 with 2.6.32-358.18.1.el6.x86_64 kernel.  CRI also provides 1.3-petabyte storage space to be provisioned as **lab-shares** for BSD researchers. 
 
@@ -28,7 +28,7 @@ We will use SSH (Secure Shell) to connect to CRI's HPC. SSH is included in all s
 Open a PuTTY session, on 'Host Name (or IP address)' type: **tarbell.cri.uchicago.edu**,  select SSH as the Connection Type, verify the port number in the'Port' Box is **22**. Press the 'Open' button, then type in the provided **username and password** when prompted. Type **yes** if you are prompted to accept a key before entering username.
 
 
-## 2 Login
+## 2. Login
 
 For MacOS or Unix/Linux users:
 1. Open a terminal session.
@@ -38,4 +38,11 @@ For MacOS or Unix/Linux users:
 $ssh username@tarbell.cri.uchicago.edu
 ```
 
+Create a working directory and four sub-directories under your **home** directory for this had-on tutorial:
+
+```bash
+$ mkdir ~/CRI_training
+$ cd CRI_training
+$ mkdir Ex1 Ex2 Ex3 Ex4
+```
 
