@@ -74,6 +74,8 @@ As an example: The *Sparc64-IXfx chip* has 16 Sparc cores that run at 1.85GHz an
 
 **High Performance Computing** 
 
+![HPC]https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/cheatsheets/HPC.jpeg
+
 High-performance computing (HPC) is the use of **parallel processing** for running advanced application programs efficiently, reliably and quickly. The term applies especially to systems that function **above a TFLOP** or 10^12 floating-point operations per second. The term HPC is not a synonym for supercomputing, technically a supercomputer is a system that performs at the currently highest operational rate of more than a PFLOPS (10^15 floating-point operations per second).
 
 
@@ -85,7 +87,7 @@ TEXT here
 
 ![CloudComputing](https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/cheatsheets/CloudComputing.jpeg)
 
-Cloud Computing: Computing and software resources that are delivered on demand, as service.
+Cloud Computing: on-demand access to a shared pool of configurable computing resources 
 
 
 Software as a Service (SaaS) applications are hosted by a vendor and made available to customers over the Internet
