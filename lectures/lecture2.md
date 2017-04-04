@@ -122,13 +122,19 @@ Cloud Computing: on-demand access to a shared pool of configurable computing res
 
 ## 3. Programming strategies for Parallel Computation: 
 
-- Divide the computation
+- Split the data
 
-My work: Using Grid technology for computationally intensive applied bioinformatics analyses
+For an **'embarrassingly parallel problems'** (also known as perfectly parallel or pleasingly parallel), the obvious strategy is to split the big data in small manageable chunks.  
+
+My work: **GRID-BLAST** Using Grid technology for computationally intensive applied bioinformatics analyses
 
 http://www.bioinfo.de/isb/2006060046/main.html
 
-- Divide the data
+And The epitope space of the human proteome
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2271163/ 
+
+- Distribute the computational load 
 
 
 - Access more memmory
