@@ -102,7 +102,7 @@ Cloud Computing: on-demand access to a shared pool of configurable computing res
 - Easy Access: Can be used from any computer or device with an Internet connection
 - Easy updates: Updates occur across the service
 
-**Cloud Computing Advantages Disadvantages** 
+**Cloud Computing Disadvantages** 
 
 - Security Concerns
 - Terms of Service
