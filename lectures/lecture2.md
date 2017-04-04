@@ -132,13 +132,14 @@ As a result [The epitope space of the human proteome](https://www.ncbi.nlm.nih.g
 
 - Distribute the computational load 
 
-For 'computationally intensive' tasks (i.e. **searching for prime numbers**, **calculating large factorials**,  quantum chromodynamics, astrophysical and cosmological simulations, weather simulation, etc.), and for tasks were there is **strong 'data interdependence'** a Message Passing Interface (MPI) strategy is needed. MPI is a communication protocol for programming parallel computers. Both point-to-point and collective communication are supported. MPI is a message-passing application programmer interface, together with protocol and semantic specifications for how its features must behave in any implementation. MPI's goals are high performance, scalability, and portability. A good read for an introduction to programming parallel systems that use the MPI: [Parallel Programming with MPI](http://www.cs.usfca.edu/~peter/ppmpi/)
+For **'computationally intensive'** tasks (i.e. **searching for prime numbers**, **calculating large factorials**,  quantum chromodynamics, astrophysical and cosmological simulations, weather simulation, etc.), and for tasks were there is **strong 'data interdependence'** a Message Passing Interface (MPI) strategy is needed. MPI is a communication protocol for programming parallel computers. Both point-to-point and collective communication are supported. MPI is a message-passing application programmer interface, together with protocol and semantic specifications for how its features must behave in any implementation. MPI's goals are high performance, scalability, and portability. A good read for an introduction to programming parallel systems that use the MPI: [Parallel Programming with MPI](http://www.cs.usfca.edu/~peter/ppmpi/)
 
-
+Recomended reading: [rapidGSEA](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1244-x), a bioinformatics application for speeding-up the gene set enrichment analysis on multi-core CPUs and CUDA-enabled GPUs
 
 - Access more memmory
 
-(Try multiplying two big matrices)
+There are tasks that are both computational and data intensive, they usually need to have simultaneous access to the full data model
+(i.e. multiplying two big matrices), to compute those kind of problems, it is needed to access HPC resources with nodes that share large amouns of RAM memmory. In Bioinformatics a commun problem that often needs such setting is **De novo transcriptome assembly** from RNA-Seq data this task ususallu demand ~1G of RAM per ~1M pairs Illumina reads (i.e. tools like: [SOAPdenovo-trans](http://soap.genomics.org.cn/SOAPdenovo-Trans.html), [TransABYSS](https://github.com/bcgsc/transabyss) and [Trinity](https://github.com/trinityrnaseq/trinityrnaseq/wiki))
 
 ## 4. Programing languages for Distributed Computing:
 
