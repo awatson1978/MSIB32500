@@ -90,9 +90,9 @@ Although a single grid can be dedicated to a particular application, commonly a 
 
 Grid enviroments consist at least of 3 main componets: the hardware, the middleware (like the Advanced Resource Connector ARC)  and the applications (like software).
 
-Recomened read on this topic: [The Grid: Blueprint for a New Computing Infrastructure] (https://books.google.com/books?id=ONRQAAAAMAAJ) by the University of Chicago Professor [Ian Foster](https://cs.uchicago.edu/directory/ian-foster)
+Recomened read on this topic: [The Grid: Blueprint for a New Computing Infrastructure](https://books.google.com/books?id=ONRQAAAAMAAJ) by the University of Chicago Professor [Ian Foster](https://cs.uchicago.edu/directory/ian-foster)
 
-**Cloud Computing**
+**CLOUD Computing**
 
 Cloud Computing: on-demand access to a shared pool of configurable computing resources 
 
