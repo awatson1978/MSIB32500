@@ -22,16 +22,14 @@ In this tutorial you will learn how to access TARBELL cluster, transfer files, c
 
 We will use SSH (Secure Shell) to connect to CRI's HPC. SSH is included in all standard Linux and Mac Operating Systems. If you are using MacOS or LinuxOS you can open the **Terminal** application.  If you are using Microsoft Windows, you'll have to install a SSH client on your computer. 
 
-```
-Microsoft Windows user you will need to install a tool for remote computing: [MobaXterm](http://mobaxterm.mobatek.net) and/or PuTTY (http://www.putty.org)
-Please go to: http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html locate the apropiate binary file (executable putty.exe file) for your hardware 32bits or 64 bits laptop. Place this file on your destop (or other folder that you can access easyly). You will need to 'doble-click' the putty.exe file everytime that you need to access it.
-```
+**Microsoft Windows user** you will need to install a tool for remote computing: [MobaXterm](http://mobaxterm.mobatek.net) and/or
+[PuTTY](http://www.putty.org). PuTTY user go to: http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html locate the apropiate binary file (executable putty.exe file) for your hardware (32bits or 64 bits laptop). Place this file on your destop (or other folder that you can access easyly). You will need to 'double-click' this file each time you need to access it.
 
+Open a PuTTY session, on 'Host Name (or IP address)' type: **tarbell.cri.uchicago.edu**,  select SSH as the Connection Type, verify the port number in the'Port' Box is **22**. Press the 'Open' button, then type in the provided **username and password** when prompted. Type **yes** if you are prompted to accept a key before entering username.
 
-It is strongly recommended that you use PuTTY SSH for Windows-based systems. You can download Putty from http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html and double click putty.exe to install it.
-Login
-The login procedure varies slightly depending on whether you use a Windows computer or Mac/Unix/Linux computer.
-For Mac or Unix/Linux users:
+**Login**
+
+For MacOS or Unix/Linux users:
 1. Open a terminal session.
 2. Connect to the login node of TARBELL cluster:
 
