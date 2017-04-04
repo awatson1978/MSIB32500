@@ -97,7 +97,7 @@ Cloud Computing: on-demand access to a shared pool of configurable computing res
 
 **Cloud Computing Advantages**
 
-- Pay as you go: Can be less expensive compared to buying installing and maintaining your own 
+- Pay as you go: Could be less expensive compared to buying installing and maintaining your own 
 - Flexibility: Theoretical infinite scalability
 - Easy Access: Can be used from any computer or device with an Internet connection
 - Easy updates: Updates occur across the service
@@ -125,9 +125,9 @@ http://www.bioinfo.de/isb/2006060046/main.html
 
 
 
-Programing languages for Distributed Computing:
+**Programing languages for Distributed Computing:**
 
-BigDataScript
+[BigDataScript] https://pcingola.github.io/BigDataScript/
 
 Develop ONE data pipeline and run exactly the same script everywhere. No matter how big the computer. Created by: Pablo Cingolani > Director of IT and Bioinformatics at Kew Inc.
 Your program runs on a 25,000 core cluster or a single CPU laptop
