@@ -89,25 +89,25 @@ Cloud Computing: on-demand access to a shared pool of configurable computing res
 ![CloudComputing](https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/cheatsheets/CloudComputing.jpeg)
 
 **Cloud Services**
+- Software as a Service (SaaS) applications are hosted by a vendor and made available to customers over the Internet
+- Platform as a Service (PaaS) is a way to rent hardware, operating systems, storage and network capacity (and all associated service) over the internet
+- Infrastructure as a Service (IaaS) an organization outsources the equipment used to support operations, including storage, hardware, servers and networking components. The service provider owns the equipment and is responsible for housing, running and maintaining it. The client typically pays on as per-use basis.
 
 ![CloudServices](https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/cheatsheets/CloudServices.jpeg)
 
-Software as a Service (SaaS) applications are hosted by a vendor and made available to customers over the Internet
-Platform as a Service (PaaS) is a way to rent hardware, operating systems, storage and network capacity (and all associated service) over the internet
-Infrastructure as a Service (IaaS) an organization outsources the equipment used to support operations, including storage, hardware, servers and networking components. The service provider owns the equipment and is responsible for housing, running and maintaining it. The client typically pays on as per-use basis.
-
 **Cloud Computing Advantages**
 
-..* Pay as you go: Can be less expensive compared to buying installing and maintaining your own 
-..* Flexibility: Theoretical infinite scalability
-..* Easy Access: Can be used from any computer or device with an Internet connection
-..* Easy updates: Updates occur across the service
+- Pay as you go: Can be less expensive compared to buying installing and maintaining your own 
+- Flexibility: Theoretical infinite scalability
+- Easy Access: Can be used from any computer or device with an Internet connection
+- Easy updates: Updates occur across the service
 
 **Cloud Computing Advantages Disadvantages** 
 
-..* Security Concerns
-..* Terms of Service
-..* Privacy Policies
+- Security Concerns
+- Terms of Service
+- Privacy Policies
+- Charge model: I/O fees 
 
 
 ## 3. Programming Paradigms for Parallel Computation: 
