@@ -108,6 +108,20 @@ Windows users can also use GUI tools like WinSCP (http://winscp.net/download/win
 
 **Note: DO NOT RUN JOBS on the login nodes of the cluster. Always submit jobs to the compute nodes (qsub), or use the interactive mode (qsub -I)**
 
+In this section, you will learn how to execute jobs on CRI's TARBELL cluster. We will use a tool for raw data quality control of NGS data as an example. The tool we will be using is a Java based program called FastQC (http://www.bioinformatics.babraham.ac.uk/projects/fastqc/) This tool provides a modular set of QC analyses that can help you to evaluate the quality of your sequences, this is in general the first step on any NGS analysis pipeline.  
+
+TARBELL cluster uses **Torque** as a resource manager (Provides low-level functionality to start, hold, cancel and monitor jobs) and **Moab** as Work-load Manager (job scheduler) to manage the cluster resources.Torque/Moab is based on the **Portable Batch System (PBS)** originally developed by NASA in the early 1990s. As such, **Torque/Moab uses PBS directives (commands)** to receive job requests from users.
+
+ **What does a PBS script look like?**
+ 
+
+
+
+TorqueIt provides user commands such as qsub, qdel, qstat, etc, which are used to submit, delete and check the status of jobs on the cluster.
+TARBELL cluster supports two types of job submission - interactive mode and batch mode. The difference between interactive and batch jobs is that with batch jobs you place all of the instructions into a script file and submit that script to the scheduler. The batch job script contains all the information needed such as the location of the input and output files as well as run parameters. Once the batch job starts, you can log off and the job will remain running. An interactive Job, on the other hand, is one in which you need to interact with the running program and/or node. Sometimes this is needed when debugging, or when the program job needs to interact with you such as R (R program can be run in parallel as batch jobs as well).
+
+
+
 Gardner -> Lmod
 Tarbell -> modules
 
