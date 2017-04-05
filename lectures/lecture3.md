@@ -41,8 +41,29 @@ $ssh username@tarbell.cri.uchicago.edu
 Create a working directory and four sub-directories under your **home** directory for this had-on tutorial:
 
 ```bash
-$ mkdir ~/CRI_training
-$ cd CRI_training
+$ mkdir ~/mscbmil3
+$ cd mscbmil3
 $ mkdir Ex1 Ex2 Ex3 Ex4
+```
+## Transfering data files
+
+You can transfer files from your local computer to your home directory on the cluster or download the files from public databases and repositories. 
+
+To download data from a website directly to your **working directory** on TARBELL cluster, you can use either the command **wget** or **curl** 
+
+** Exercise 1.1:** Download a microarray expression raw data file from NCBI's Gene Expression Omnibus (GEO) (http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE31736) to your home directory on TARBELL cluster.
+
+```bash
+$ cd Ex1
+$ wget 'http://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE31736&format=file' -O GSE31736_RAW.tar
+$ ls  
+$ rm GSE31736_RAW.tar
+```
+
+or
+```bash
+$ curl 'http://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE31736&format=file' -o GSE31736_RAW.tar
+$ ls
+$ rm GSE31736_RAW.tar
 ```
 
