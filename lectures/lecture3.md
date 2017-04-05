@@ -108,7 +108,7 @@ Windows users can also use GUI tools like WinSCP (http://winscp.net/download/win
 
 **Note: DO NOT RUN JOBS on the login nodes of the cluster. Always submit jobs to the compute nodes (qsub), or use the interactive mode (qsub -I)**
 
-In this section, you will learn how to execute jobs on CRI's TARBELL cluster. We will use a tool for raw data quality control of NGS data as an example. The tool we will be using is a Java based program called FastQC (http://www.bioinformatics.babraham.ac.uk/projects/fastqc/) This tool provides a modular set of QC analyses that can help you to evaluate the quality of your sequences, this is in general the first step on any NGS analysis pipeline.  
+In this section, you will learn how to execute jobs on CRI's TARBELL cluster. We will use a tool for raw data quality control of NGS data as an example. The tool we will be using is a Java based program called **FastQC** (http://www.bioinformatics.babraham.ac.uk/projects/fastqc/) This tool provides a modular set of QC analyses that can help you to evaluate the quality of your sequences, this is in general the first step on any NGS analysis pipeline.  
 
 TARBELL cluster uses **Torque** as a resource manager (Provides low-level functionality to start, hold, cancel and monitor jobs) and **Moab** as Work-load Manager (job scheduler) to manage the cluster resources.Torque/Moab is based on the **Portable Batch System (PBS)** originally developed by NASA in the early 1990s. As such, **Torque/Moab uses PBS directives (commands)** to receive job requests from users.
 
