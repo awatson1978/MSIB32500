@@ -185,6 +185,23 @@ scp jandrade@tarbell.cri.uchicago.edu:/home/jandrade/mscbmi/Ex2/seqGood_fastqc.h
 Now, in your local computer, go to the folder were you just copied the files (in my case is ./ or my home) and open the **seqGood_fastqc.html** file to explore the FastQC results. You can also unzip the **seqGood_fastqc.zip** file and review the **summary.txt** file for a summary of **PASS** and **FAIL** tests.
 
 
+Repeat the steps to run FastQC on the **seqBad.fastq** file and compare the QC reports with the previous results (note you are still in the **interactive** mode session).
+
+```bash
+cd ~/mscbmi/Ex2
+fastqc seqBad.fastq
+exit
+```
+Note that after FastQC on the **seqBad.fastq** file, we used the command: **exit** to exit the **interactive** mode session.
+
+Open a new command line on your local computer and then run the following commands (you will need to use your own username and password):
+
+```bash
+scp jandrade@tarbell.cri.uchicago.edu:/home/jandrade/mscbmi/Ex2/seqBad_fastqc.zip ./
+scp jandrade@tarbell.cri.uchicago.edu:/home/jandrade/mscbmi/Ex2/seqBad_fastqc.html ./
+```
+Compare the FastQC results from seqGood_fastqc.html and seqBad_fastqc.html
+
 
 
 
