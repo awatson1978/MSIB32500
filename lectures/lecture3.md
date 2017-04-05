@@ -47,8 +47,8 @@ By default, you will be logged into to the 'log-in' nodes **(in01 or in02)**, fr
 Create a working directory and four sub-directories under your **home** directory for this had-on tutorial:
 
 ```bash
-$ mkdir ~/mscbmil3
-$ cd mscbmil3
+$ mkdir ~/mscbmi
+$ cd mscbmi
 $ mkdir Ex1 Ex2 Ex3 Ex4
 ```
 ## 3. Transfering data files
@@ -89,17 +89,17 @@ For Mac/Unix/Linux users:
 To upload files from your local computer using **scp** use the following command:
 
 ```bash
-scp PATH_TO_GSE31736_RAW.tar username@tarbell.cri.uchicago.edu:~/mscbmil3/Ex1
+scp PATH_TO_GSE31736_RAW.tar username@tarbell.cri.uchicago.edu:~/mscbmi/Ex1
 ```
 Your command should look like: 
 
 ```bash
-$ scp ./GSE31736_RAW.tar jandrade@tarbell.cri.uchicago.edu:~/mscbmil3/Ex1
+scp ./GSE31736_RAW.tar jandrade@tarbell.cri.uchicago.edu:~/mscbmi/Ex1
 ```
 To upload files from your local computer using **rsync** use the following command:
 
 ```bash
-rsync -avz GSE31736_RAW.tar username@tarbell.cri.uchicago.edu:~/mscbmil3/Ex1
+rsync -avz GSE31736_RAW.tar username@tarbell.cri.uchicago.edu:~/mscbmi/Ex1
 ```
 Windows users can also use GUI tools like WinSCP (http://winscp.net/download/winscp514setup.exe) to transfer files.
 
@@ -127,10 +127,23 @@ Torque provides user commands such as **qsub, qdel, qstat, etc.,** which are use
 
 In this exercise, you will conduct the quality control analysis on a "good" quality sequence file and on a "bad" quality sequence file using FastQC program. 
 
-First you will need to download two raw sequence files to your **home** directory on TARBELL cluster. You can do so using the command **wget or curl**:
+First you will need to download two raw sequence files to your **home** directory on TARBELL cluster. 
+
+You can do so using the command **wget or curl**:
 
 - seqGood.fastq (https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/data/seqGood.fastq) 
 - seqBad.fastq (https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/data/seqBad.fastq) 
+
+Your command should look like: 
+
+```bash
+cd ~/msbmi/Ex2
+wget https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/data/seqGood.fastq
+wget https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/data/seqBad.fastq
+ls -l
+```
+
+
 
 Gardner -> Lmod
 Tarbell -> modules
