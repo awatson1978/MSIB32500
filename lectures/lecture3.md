@@ -200,10 +200,10 @@ Open a new command line on your local computer and then run the following comman
 scp jandrade@tarbell.cri.uchicago.edu:/home/jandrade/mscbmi/Ex2/seqBad_fastqc.zip ./
 scp jandrade@tarbell.cri.uchicago.edu:/home/jandrade/mscbmi/Ex2/seqBad_fastqc.html ./
 ```
-Compare the FastQC results from seqGood_fastqc.html and seqBad_fastqc.html
+Compare the FastQC results from seqGood_fastqc.html and seqBad_fastqc.html, let's take a look at the Per base quality test:
 
-
-
+![good](https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/cheatsheets/perBaseGood.png)
+![bad](https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/cheatsheets/perBaseBad.png)
 
 Gardner -> Lmod
 Tarbell -> modules
