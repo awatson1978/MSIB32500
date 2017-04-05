@@ -173,6 +173,8 @@ fastqc seqGood.fastq
 ls
 ```
 
+This will generate a self-contained directory called **"seqGood_fastqc.html"** which contains an HTML formatted report that can be loaded into a browser and a compressed file with all the results named **"seqGood_fastqc.zip**
+
 
 
 Gardner -> Lmod
