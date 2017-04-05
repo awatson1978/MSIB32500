@@ -51,7 +51,7 @@ You can transfer files from your local computer to your home directory on the cl
 
 To download data from a website directly to your **working directory** on TARBELL cluster, you can use either the command **wget** or **curl** 
 
-** Exercise 1.1:** Download a microarray expression raw data file from NCBI's Gene Expression Omnibus (GEO) (http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE31736) to your home directory on TARBELL cluster.
+**Exercise 1.1:** Download a microarray expression raw data file from NCBI's Gene Expression Omnibus (GEO) (http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE31736) to your home directory on TARBELL cluster.
 
 ```bash
 $ cd Ex1
