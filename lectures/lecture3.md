@@ -150,8 +150,19 @@ head -8 seqGood.fastq
 tail -8 seqGood.fastq
 grep --count ^@ERR030881 seqGood.fastq
 ```
+Since each read in a fastq file has 4 lines, to find out how many reads are there in the fastq file, you can also use the folloing command:
 
-tail -8 seqGood.fastq
+```bash
+wc -l seqGood.fastq
+```
+And divide the result by 4.
+
+
+To **launch an interactive session using one core, use the following command:
+
+```bash
+qsub -I
+```
 
 
 Gardner -> Lmod
