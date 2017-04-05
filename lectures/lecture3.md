@@ -175,6 +175,17 @@ ls
 
 This will generate a self-contained directory called **"seqGood_fastqc.html"** which contains an HTML formatted report that can be loaded into a browser and a compressed file with all the results named **"seqGood_fastqc.zip**
 
+Lets use the scp command, to copy the result files from your working directory in TARBELL to your local computer, so that we can explore the results. Open a new command line on your local computer and then run the following commands (you will need to use your own username and password):
+
+```bash
+scp jandrade@tarbell.cri.uchicago.edu:/home/jandrade/mscbmi/Ex2/seqGood_fastqc.zip ./
+scp jandrade@tarbell.cri.uchicago.edu:/home/jandrade/mscbmi/Ex2/seqGood_fastqc.html ./
+```
+
+Now, in your local computer, go to the folder were you just copied the files (in my case is ./ or my home) and open the **seqGood_fastqc.html** file. Explore the FastQC results.
+
+
+
 
 
 Gardner -> Lmod
