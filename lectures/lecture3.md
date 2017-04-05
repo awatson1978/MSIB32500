@@ -83,7 +83,7 @@ Using computer command line (open a new terminal), navigate (use the cd command)
 
 For Mac/Unix/Linux users:
 
-Type the following commands and type the password when requested.
+To upload files from your local computer using **scp** use the following command:
 
 ```bash
 scp PATH_TO_GSE31736_RAW.tar username@tarbell.cri.uchicago.edu:~/mscbmil3/Ex1
@@ -92,4 +92,9 @@ Your command should look like:
 
 ```bash
 $ scp ./GSE31736_RAW.tar jandrade@tarbell.cri.uchicago.edu:~/mscbmil3/Ex1
+```
+To upload files from your local computer using **rsync** use the following command:
+
+```bash
+rsync -avz GSE31736_RAW.tar username@tarbell.cri.uchicago.edu:~/mscbmil3/Ex1
 ```
