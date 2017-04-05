@@ -38,7 +38,7 @@ For MacOS or Unix/Linux users:
 $ssh username@tarbell.cri.uchicago.edu
 ```
 
-By default, you will be logged into to the log-in' nodes **(in01 or in02)**, from there you will have access to the **storage** and ** scratch** spaces (1Gb and 56 Gb speeds respectibly). The log-in node also have access to the **schedulell and RM** nodes, the scheduler is the interface, to the **compute nodes (cn1, cn2, .. cnn)**. The log-in nodes also have access to the **cri-syncmon** node which is a dedicated I/O node with several protocols/ports for data I/O enabeled.
+By default, you will be logged into to the log-in' nodes **(in01 or in02)**, from there you will have access to the **storage** and ** scratch** spaces (1Gb and 56 Gb speeds respectibly). The log-in node also have access to the **schedulell and RM** nodes, the scheduler is the interface, to the **compute nodes (cn1, cn2, .. cn500)**. The log-in nodes also have access to the **cri-syncmon** node which is a dedicated I/O node with several protocols/ports for data I/O enabeled.
 
 
 Create a working directory and four sub-directories under your **home** directory for this had-on tutorial:
@@ -99,4 +99,24 @@ To upload files from your local computer using **rsync** use the following comma
 rsync -avz GSE31736_RAW.tar username@tarbell.cri.uchicago.edu:~/mscbmil3/Ex1
 ```
 Windows users can also use GUI tools like WinSCP (http://winscp.net/download/winscp514setup.exe) to transfer files.
+
+
+
+Labshares
+/home/<user_id>
+
+Scratch
+/scratch/<user_id>
+
+Gardner -> Lmod
+Tarbell -> modules
+
+See which modules are available to be loaded:
+module avail
+
+Load packages:
+module load <package1> <package1>
+
+module list
+
 
