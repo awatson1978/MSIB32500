@@ -76,7 +76,7 @@ The '-o' option redirect the content to a file, otherwise it will appear on stdo
 
 To **upload the files from your local computer to TARBELL cluster**, you can use **scp or rsync** commands on Mac/Unix/Linux or Winscp on Windows.
 
-**Exercise 1.2:** Upload a file from your laptop/computer to your home directory on TARBELL cluster:
+**Exercise 1.2: ** Upload a file from your laptop/computer to your home directory on TARBELL cluster:
 
 First, download the file available at the following link, to your local computer:
 
@@ -123,8 +123,14 @@ Torque provides user commands such as **qsub, qdel, qstat, etc.,** which are use
 
 - Batch mode: In a batch mode you first write a PBS script with all the instructions/code you want to execute, and then you submit that script to the scheduler. The batch job script contains all the information needed, such as the location of the input and output files, as well as run parameters. Once the batch job starts, you can log off and the job will remain running. 
 
-Exercise 2. Running job in interactive mode
-In this exercise, you will conduct quality control analysis on a "good" quality sequence file and a "bad" quality sequence file using FastQC program. First you need to download two raw sequence files - seqGood.fastq (ftp://logia.cri.uchicago.edu/tutorials/Feb2015/Ex2/seqGood.fastq) and seqBad.fastq (ftp://logia.cri.uchicago.edu/tutorials/Feb2015/Ex2/seqBad.fastq) to your home directory on TARBELL cluster. You can do so using the command wget or curl that you just learned.
+** Exercise 2. Running job in interactive mode**
+
+In this exercise, you will conduct the quality control analysis on a "good" quality sequence file and on a "bad" quality sequence file using FastQC program. 
+
+First you will need to download two raw sequence files to your **home** directory on TARBELL cluster. You can do so using the command **wget or curl**:
+
+- seqGood.fastq (ftp://logia.cri.uchicago.edu/tutorials/Feb2015/Ex2/seqGood.fastq) 
+- seqBad.fastq (ftp://logia.cri.uchicago.edu/tutorials/Feb2015/Ex2/seqBad.fastq) 
 
 
 Gardner -> Lmod
