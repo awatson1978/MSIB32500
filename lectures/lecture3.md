@@ -90,5 +90,6 @@ scp PATH_TO_GSE31736_RAW.tar username@tarbell.cri.uchicago.edu:~/mscbmil3/Ex1
 ```
 Your command should look like: 
 
+```bash
 $ scp ./GSE31736_RAW.tar jandrade@tarbell.cri.uchicago.edu:~/mscbmil3/Ex1
-
+```
