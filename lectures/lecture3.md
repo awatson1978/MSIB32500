@@ -124,3 +124,5 @@ qstat -f extended job status
 qsub -I interactive
 
 #PBS -s 
+
+watch qstat
