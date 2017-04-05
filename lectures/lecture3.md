@@ -162,7 +162,17 @@ To **launch an interactive session using one core, use the following command:
 
 ```bash
 qsub -I
+
+cd ~/mscbmi/Ex2
 ```
+Now You can run FastQC by typing:
+
+```bash
+module load fastqc
+fastqc seqGood.fastq
+ls
+```
+
 
 
 Gardner -> Lmod
