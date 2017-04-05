@@ -182,7 +182,7 @@ scp jandrade@tarbell.cri.uchicago.edu:/home/jandrade/mscbmi/Ex2/seqGood_fastqc.z
 scp jandrade@tarbell.cri.uchicago.edu:/home/jandrade/mscbmi/Ex2/seqGood_fastqc.html ./
 ```
 
-Now, in your local computer, go to the folder were you just copied the files (in my case is ./ or my home) and open the **seqGood_fastqc.html** file. Explore the FastQC results.
+Now, in your local computer, go to the folder were you just copied the files (in my case is ./ or my home) and open the **seqGood_fastqc.html** file to explore the FastQC results. You can also unzip the **seqGood_fastqc.zip** file and review the **summary.txt** file for a summary of **PASS** and **FAIL** tests.
 
 
 
