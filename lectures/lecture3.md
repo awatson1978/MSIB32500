@@ -138,8 +138,8 @@ Your command should look like:
 
 ```bash
 cd ~/msbmi/Ex2
-wget https://raw.githubusercontent.com/MScBiomedicalInformatics/MSIB32500/master/data/seqGood.fastq
-wget https://raw.githubusercontent.com/MScBiomedicalInformatics/MSIB32500/master/data/seqBad.fastq
+wget ftp://logia.cri.uchicago.edu/bioinformatics/MSIB32500/Lecture3/Ex2/seqGood.fastq
+wget ftp://logia.cri.uchicago.edu/bioinformatics/MSIB32500/Lecture3/Ex2/seqBad.fastq
 ls -l
 ```
 
