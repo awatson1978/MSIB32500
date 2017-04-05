@@ -79,10 +79,16 @@ First, download the file available at the following link, to your local computer
 
 https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/data/GSE31736_RAW.tar 
 
-Go to the directory where file GSE31736_RAW.tar is located.
+Using computer command line (open a new terminal), navigate (use the cd command) to the directory where file 'GSE31736_RAW.tar' is located.
 
 For Mac/Unix/Linux users:
 
-Type the following commands and type password when prompt appears.
+Type the following commands and type the password when requested.
 
+```bash
+scp PATH_TO_GSE31736_RAW.tar username@tarbell.cri.uchicago.edu:~/mscbmil3/Ex1
+```
+Your command should look like: 
+
+$ scp ./GSE31736_RAW.tar jandrade@tarbell.cri.uchicago.edu:~/mscbmil3/Ex1
 
