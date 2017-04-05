@@ -104,7 +104,7 @@ Windows users can also use GUI tools like WinSCP (http://winscp.net/download/win
 ## 4. Running jobs on TARBELL HPC cluster
 
 **Note: DO NOT RUN JOBS ON THE login nodes of the cluster!!! Always submit jobs (qsub) to the computation nodes, 
-or use the interactive mode (qsub -I)
+or use the interactive mode (qsub -I)**
 
 Gardner -> Lmod
 Tarbell -> modules
