@@ -48,7 +48,7 @@ $ mkdir ~/mscbmil3
 $ cd mscbmil3
 $ mkdir Ex1 Ex2 Ex3 Ex4
 ```
-## Transfering data files
+## 3. Transfering data files
 
 You can transfer files from your local computer to your home directory on the cluster or download the files from public databases and repositories. 
 
