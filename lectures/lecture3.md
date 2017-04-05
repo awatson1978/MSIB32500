@@ -37,6 +37,9 @@ For MacOS or Unix/Linux users:
 ```bash
 $ssh username@tarbell.cri.uchicago.edu
 ```
+By default, you will be logged into to the log-in' nodes (in01 or in02), from there you will have access to the **storage** and ** scratch** space (1Gb and 56 Gb speeds respectibly). The log-in node also have access to the **schedulell and RM** nodes, the schedules is the interfaze, to the **compute nodes** (cn1, cn2, .. cnn). the log-in nodes also have access to the  
+ **cri-syncmon** node which is a I/O node with several protocols/port for data I/O enabeled.
+
 
 Create a working directory and four sub-directories under your **home** directory for this had-on tutorial:
 
@@ -66,4 +69,4 @@ $ curl 'http://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE31736&format=file' -o G
 $ ls
 $ rm GSE31736_RAW.tar
 ```
-The '-o' option redirect the content of your to a file using '-o' option; otherwise it will appear on stdout, i.e. the screen.
+The '-o' option redirect the content to a file, otherwise it will appear on stdout, i.e. the screen.
