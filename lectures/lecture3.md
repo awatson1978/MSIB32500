@@ -138,10 +138,17 @@ Your command should look like:
 
 ```bash
 cd ~/msbmi/Ex2
-wget https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/data/seqGood.fastq
-wget https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/data/seqBad.fastq
+wget https://raw.githubusercontent.com/MScBiomedicalInformatics/MSIB32500/master/data/seqGood.fastq
+wget https://raw.githubusercontent.com/MScBiomedicalInformatics/MSIB32500/master/data/seqBad.fastq
 ls -l
 ```
+
+Let us first have a look at the sequence read fastq file. The following commands show the first and last two reads, as well as the total number of reads in seqGood.fastq file.
+
+```bash
+head -8 seqGood.fastq
+```
+
 
 
 
