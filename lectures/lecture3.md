@@ -101,6 +101,8 @@ rsync -avz GSE31736_RAW.tar username@tarbell.cri.uchicago.edu:~/mscbmil3/Ex1
 Windows users can also use GUI tools like WinSCP (http://winscp.net/download/winscp514setup.exe) to transfer files.
 
 
+## 4. Running jobs on TARBELL HPC cluster
+
 
 Labshares
 /home/<user_id>
