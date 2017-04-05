@@ -129,9 +129,8 @@ In this exercise, you will conduct the quality control analysis on a "good" qual
 
 First you will need to download two raw sequence files to your **home** directory on TARBELL cluster. You can do so using the command **wget or curl**:
 
-- seqGood.fastq (https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/data/seqBad.fastq) 
-- seqBad.fastq (ftp://logia.cri.uchicago.edu/tutorials/Feb2015/Ex2/seqBad.fastq) 
-
+- seqGood.fastq (https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/data/seqGood.fastq) 
+- seqBad.fastq (https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/data/seqBad.fastq) 
 
 Gardner -> Lmod
 Tarbell -> modules
