@@ -66,4 +66,4 @@ $ curl 'http://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE31736&format=file' -o G
 $ ls
 $ rm GSE31736_RAW.tar
 ```
-
+The '-o' option redirect the content of your to a file using '-o' option; otherwise it will appear on stdout, i.e. the screen.
