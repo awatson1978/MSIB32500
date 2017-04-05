@@ -210,6 +210,11 @@ Let's compare the FastQC results from  **seqGood.fastq** with **seqBad.fastg**, 
 
 ![bad](https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/cheatsheets/perBaseBad.png)
 
+**Exercise 3: Running job in batch mode**
+
+In practice Often you investigate more than one or two sequence files at once. Instead of running FastQC sequentially on each file, you can take advantage of the power of batch job submission. In order to do so, you need to create a job submission script (also called PBS script). A template script looks like this:
+
+
 Gardner -> Lmod
 Tarbell -> modules
 
