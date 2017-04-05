@@ -98,3 +98,5 @@ To upload files from your local computer using **rsync** use the following comma
 ```bash
 rsync -avz GSE31736_RAW.tar username@tarbell.cri.uchicago.edu:~/mscbmil3/Ex1
 ```
+Windows users can also use GUI tools like WinSCP (http://winscp.net/download/winscp514setup.exe) to transfer files.
+
