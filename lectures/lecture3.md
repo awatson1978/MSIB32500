@@ -37,6 +37,9 @@ For MacOS or Unix/Linux users:
 ```bash
 $ssh username@tarbell.cri.uchicago.edu
 ```
+CRI's TARBELL HPC diagram
+
+![tarbell](https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/cheatsheets/tarbell.jpeg)
 
 By default, you will be logged into to the log-in' nodes **(in01 or in02)**, from there you will have access to the **storage** and ** scratch** spaces (1Gb and 56 Gb speeds respectibly). The log-in node also have access to the **scheduler and RM** nodes, the scheduler is the interface, to the **compute nodes (cn1, cn2, .. cn500)**. The log-in nodes also have access to the **cri-syncmon** node which is a dedicated I/O node with several protocols/ports for data I/O enabeled.
 
