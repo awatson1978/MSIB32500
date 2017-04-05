@@ -71,3 +71,14 @@ $ rm GSE31736_RAW.tar
 ```
 The '-o' option redirect the content to a file, otherwise it will appear on stdout, i.e. the screen.
 
+To **upload the files from your local computer to TARBELL cluster**, you can use **scp or rsync** commands on Mac/Unix/Linux or Winscp on Windows.
+
+**Exercise 1.2:** Upload a file from your laptop/computer to your home directory on TARBELL cluster:
+
+First, download the file available at the following link ftp://logia.cri.uchicago.edu/tutorials/Feb2015/Ex1/GSE31736_RAW.tar to your local computer. 
+
+Then navigate to the directory where file GSE31736_RAW.tar is located.
+For Mac/Unix/Linux users:
+Type the following commands and type password when prompt appears.
+
+
