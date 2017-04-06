@@ -491,7 +491,7 @@ We are now going to run the alignment using **bowtie2** on the cluster, you need
 # Job Execution #
 #################
 # load the programs to be executed
-module load bowtie2
+module load bowtie2/2.1.0
 module load samtools/1.3.1
 # set the input files and program paths
 seqPath=~/mscbmi/Ex4
