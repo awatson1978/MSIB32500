@@ -450,7 +450,7 @@ Next submit the job to compute nodes and monitor the job status:
 
 ```bash
 qsub run_bwa_heart.pbs
-$ qstat
+qstat
 ```
 
 
