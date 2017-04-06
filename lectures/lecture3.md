@@ -425,7 +425,8 @@ To run the alignment using **bwa** on the cluster, you need to create a new job 
 # Job Execution #
 #################
 # load the programs to be executed
-module load samtools bwa
+module load bwa
+module load samtools/1.3.1
 # set the input files and program paths
 seqPath=~/mscbmi/Ex4
 outPath=~/mscbmi/Ex4/bwa
