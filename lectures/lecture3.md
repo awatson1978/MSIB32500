@@ -308,6 +308,18 @@ Next we will submit this job in batch mode:
 ```bash
 qsub run_fastqc_heart.pbs
 ```
+To check the status of your job use:
+
+```bash
+qstat
+```
+To watch the status of your job and keep a window to do so, use:
+
+```bash
+watch qstat
+```
+Use Ctrl-c to exit of the watch window.
+
 
 
 
