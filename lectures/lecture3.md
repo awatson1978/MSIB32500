@@ -303,6 +303,16 @@ fastqc -o $seqPath $seqfile2 &>> $seqPath\/heart.fastqc.log
 ```
 Note: To save a file in nano, you can use Ctrl-O. To close nano Ctrl-X.
 
+Next we will submit this job in batch mode:
+
+```bash
+qsub run_fastqc_heart.pbs
+```
+
+
+
+
+*************************
 
 Gardner -> Lmod
 Tarbell -> modules
@@ -334,7 +344,14 @@ module spider >> find all possible modules
 module keywork key1 key2 >> search all possible modules matching key1 and/or key2
 
 module list
-
+module save >> save your current module setting
+module restore >> restore
+module purge >> clean your modules
+module save <name>
+module restore <name>
+module help  <tool>   i.e. module help R/3.3.2
+module whatis <tool>
+module help 
 
 
 
