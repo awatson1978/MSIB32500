@@ -458,7 +458,12 @@ After the job is completed, go to the result file and check that you have succes
 ```bash
 cd ~/mscbmi/Ex4/bwa/
 ls -l
+cd ..
 ```
+
+Note:
+ (1) The program takes a few minutes to be finished because the sequence read files used in this exercise is a stripped-down version of the original compressed fastQ files, whose sizes are about 6.1GB in total. Bwa woud take much longer time to run on the original read files.
+ (2) BWA and Bowtie2 both support multi-threading. To enable it, turn on the option -t in BWA and -p in Bowtie2. In above script, 4 threads are used for the mapper, you also need to inform the scheduler of the number of CPU cores for your job by setting ppn=4. While multi-threading can speed up the mapping, specifying too many threads may actually cause your job waiting in the queue for sufficient resources to become available. Our suggestion is to set the number of threads to 4, 8, or 16 depending on the read file sizes and current job load on the cluster.
 
 
 *************************
