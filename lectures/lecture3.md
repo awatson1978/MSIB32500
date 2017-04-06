@@ -301,7 +301,7 @@ seqfile2=$seqPath/heart_ERR030886.sample.2.fastq.gz
 fastqc -o $seqPath $seqfile1 &> $seqPath\/heart.fastqc.log
 fastqc -o $seqPath $seqfile2 &>> $seqPath\/heart.fastqc.log
 ```
-
+Note: To save a file in nano, you can use Ctrl-O. To close nano Ctrl-X.
 
 
 Gardner -> Lmod
@@ -325,3 +325,18 @@ qsub -I interactive
 #PBS -s 
 
 watch qstat
+
+**************
+module avail
+module load intel/2017
+module avail
+module spider >> find all possible modules
+module keywork key1 key2 >> search all possible modules matching key1 and/or key2
+
+module list
+
+
+
+
+
+
