@@ -362,10 +362,27 @@ fastqc -o $seqPath $seqfile1 &> $seqPath\/kidney.fastqc.log
 fastqc -o $seqPath $seqfile2 &>> $seqPath\/kidney.fastqc.log
 ```
 
+Save and close nano. Then submit the job and check the status:
 
+```bash
+qsub run_fastqc_kidney.pbs
+qstat
+```
+You can review the QC results in the corresponding directories as you did in Exercise 2.
 
+Note: If you need to submit many jobs to the computation nodes, you don't have to type the above commands multiple times. Instead, you can simply create a new script named say **submit_jobs.sh** containing a script like the following:
 
+```bash
+#!/bin/bash
+qsub run_fastqc_heart.pbs
+sleep 2
+qsub run_fastqc_kidney.pbs
+```
+Then execute the script:
 
+```bash
+sh submit_jobs.sh
+```
 
 
 *************************
