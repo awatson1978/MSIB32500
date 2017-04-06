@@ -210,7 +210,7 @@ Let's compare the FastQC results from  **seqGood.fastq** with **seqBad.fastg**, 
 
 ![bad](https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/cheatsheets/perBaseBad.png)
 
-**Exercise 3: Running job in batch mode**
+**Exercise 3: Running jobs in batch mode**
 
 In practice, you would likely want to evaluate more than one or two sequence files at the time. Instead of running FastQC sequentially on each file, you can take advantage of the power of batch job submission. In order to do so, you need to create a job submission script (a **PBS** script). 
 
@@ -248,6 +248,14 @@ As described before, a job submittion script will look like the following:
 In the following exercise, you are going to perform the quality control of two RNA-seq dataset from Illumina’s Human [BodyMap 2.0 project](http://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-513/). The sequence data, generated on HiSeq 2000 instruments in 2010, consist of 16 different human tissue types. We will use a subset of the data that contains 50bp paired-end reads (PE) from 2 tissues.
 
 First you need to download the compressed sequence read files (*.fastq.gz) to your working directory on TARBELL cluster using the command **wget or curl**. Note that FastQC program accepts both .fastq and fastq.gz file formats.
+
+```bash
+cd ~/mscbmi/Ex3
+wget ftp://logia.cri.uchicago.edu/bioinformatics/MSIB32500/Lecture3/Ex3/*.gz
+ls
+```
+
+
 
 Gardner -> Lmod
 Tarbell -> modules
