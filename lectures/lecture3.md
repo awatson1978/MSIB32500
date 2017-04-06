@@ -259,6 +259,17 @@ You can check the compressed fastq.gz file using the command zcat or zless:
 ```bash
 zless heart_ERR030886.sample.1.fastq.gz
 ```
+Type **q** to exit 
+
+Next we will create a script for the QC for each tissue (four files) based on the above template. You can use any text editor write your script. Here we will use **nano** tool that is installed on TARBELL.
+
+```bash
+nano run_fastqc_heart.pbs
+```
+
+Copy & paste the following script to the **nano** text editor window:
+
+
 
 Gardner -> Lmod
 Tarbell -> modules
