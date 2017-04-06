@@ -465,6 +465,63 @@ Note:
 - The program takes just a few minutes to complete because the input sequence files used in this exercise are a stripped-down version of the original compressed fastQ files, The tipical size of a complete RNA-Seq fastq file is about 6.1GB. Running the BWA aligner on a real file would take much longer time, thus the utility of HPC enviroments to reduce the time to manageable.
 - BWA and Bowtie2 both support multi-threading. To enable it, turn on the option -t in BWA and -p in Bowtie2. In above script, 4 threads are used for the mapper, you also need to inform the scheduler of the number of CPU cores for your job by setting ppn=4. While multi-threading can speed up the mapping, specifying too many threads could cause your job to be waiting in the queue for sufficient resources to become available. Set the number of threads to 4, 8, or 16 depending on the read file sizes and current job load on the cluster.
 
+We are now going to run the alignment using **bowtie2** on the cluster, you need to create a new job submission script named **run_bowtie2_heart.pbs using nano editior:
+
+
+```bash
+#!/bin/bash
+###############################
+# Resource Manager Directives #
+###############################
+### Set the name of the job
+#PBS -N run_bwa_heart
+### Select the shell you would like to script to execute within
+#PBS -S /bin/bash
+### Inform the scheduler of the expected runtime
+#PBS -l walltime=0:59:00
+### Inform the scheduler of the number of CPU cores for your job
+#PBS -l nodes=1:ppn=4
+### Inform the scheduler of the amount of memory you expect
+#PBS -l mem=2gb
+### Set the destination for your program’s output and error
+#PBS -o $HOME/mscbmi/Ex4/${PBS_JOBNAME}.e${PBS_JOBID}
+#PBS -e $HOME/mscbmi/Ex4/${PBS_JOBNAME}.o${PBS_JOBID}
+
+#################
+# Job Execution #
+#################
+# load the programs to be executed
+module load bowtie2
+module load samtools/1.3.1
+# set the input files and program paths
+seqPath=~/mscbmi/Ex4
+outPath=~/mscbmi/Ex4/bowtie2
+seqfile1=$seqPath/heart_ERR030886.sample.1.fastq.gz
+seqfile2=$seqPath/heart_ERR030886.sample.2.fastq.gz
+readgroup=$outPath/heart_ERR030886.sample
+referenceSeq=/group/referenceFiles/Homo_sapiens/UCSC/hg19/hg19.GATKbundle.1.5/ucsc.hg19.fasta
+
+# create output directory if  it does not exist
+if [ ! -d $outPath ]; then mkdir $outPath; fi
+
+# align the pair-ended sequences, use 4 threads
+bowtie2 -p 4 -x $referenceSeq -1 $seqfile1 -2 $seqfile2 -S $readgroup.sam
+
+# convert sam file to bam file, sort and index bam file
+samtools view -F 4 -Sb $readgroup.sam > $readgroup.bam
+samtools sort $readgroup.bam $readgroup.sorted
+samtools index $readgroup.sorted.bam
+```
+
+Now, use the following commands to submit and monitor the job:
+
+```bash
+qsub run_bowtie2_heart.pbs
+qstat
+```
+
+
+
 
 *************************
 
