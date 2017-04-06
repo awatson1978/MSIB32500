@@ -233,7 +233,7 @@ As described before, a job submittion script will look like the following:
 #PBS -o $HOME/${PBS_JOBNAME}.e${PBS_JOBID}
 #PBS -e $HOME/${PBS_JOBNAME}.o${PBS_JOBID}
 
-# the program to be executed
+# define the program/s and/or command/s to be executed
 
 ./command &> output
 
