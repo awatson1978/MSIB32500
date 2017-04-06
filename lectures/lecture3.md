@@ -254,8 +254,11 @@ cd ~/mscbmi/Ex3
 wget ftp://logia.cri.uchicago.edu/bioinformatics/MSIB32500/Lecture3/Ex3/*.gz
 ls
 ```
+You can check the compressed fastq.gz file using the command zcat or zless:
 
-
+```bash
+zless heart_ERR030886.sample.1.fastq.gz
+```
 
 Gardner -> Lmod
 Tarbell -> modules
