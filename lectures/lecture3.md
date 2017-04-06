@@ -212,7 +212,33 @@ Let's compare the FastQC results from  **seqGood.fastq** with **seqBad.fastg**, 
 
 **Exercise 3: Running job in batch mode**
 
-In practice Often you investigate more than one or two sequence files at once. Instead of running FastQC sequentially on each file, you can take advantage of the power of batch job submission. In order to do so, you need to create a job submission script (also called PBS script). A template script looks like this:
+In practice, you would likely want to evaluate more than one or two sequence files at the time. Instead of running FastQC sequentially on each file, you can take advantage of the power of batch job submission. In order to do so, you need to create a job submission script (a **PBS** script). 
+
+As described before, a job submittion script will look like the following:
+
+```bash
+#!/bin/bash
+
+### Set the job's name
+#PBS -N jobname
+### Select the shell you would like the script to execute
+#PBS -S /bin/bash
+### Set the expected runtime as walltime=HH:MM:SS
+#PBS -l walltime=0:59:00
+### Set the number of CPU cores for your job. This example will allocate two cores on a single node
+#PBS -l nodes=1:ppn=2
+### Inform the scheduler of the amount of memory you expect to use. Use units of ‘b’, ‘kb’, ‘mb’, or ‘gb’
+#PBS -l mem=512mb
+### Set the destination for your program’s standard output (stdout) and error (stderr)
+#PBS -o $HOME/${PBS_JOBNAME}.e${PBS_JOBID}
+#PBS -e $HOME/${PBS_JOBNAME}.o${PBS_JOBID}
+
+# the program to be executed
+
+./command &> output
+
+```
+
 
 
 Gardner -> Lmod
