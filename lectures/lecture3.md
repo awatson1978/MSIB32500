@@ -318,7 +318,51 @@ To watch the status of your job and keep a window to do so, use:
 ```bash
 watch qstat
 ```
-Use Ctrl-c to exit of the watch window.
+Use **Ctrl-c** to exit the watch window.
+
+To delete a batch job, simply type **qdel**, followed by the Job id and return.
+
+Now, repeat the above procedure for the kidney pair-end sequence files. You will neet to create a script named **run_fastqc_kidney.pbs** using nano.
+
+```bash
+nano run_fastqc_kidney.pbs
+```
+Copy & paste the following script to the **nano** text editor:
+
+```
+#!/bin/bash
+###############################
+# Resource Manager Directives #
+###############################
+### Set the name of the job
+#PBS -N run_fastqc_heart
+### Select the shell you would like to script to execute within
+#PBS -S /bin/bash
+### Inform the scheduler of the expected runtime
+#PBS -l walltime=0:59:00
+### Inform the scheduler of the number of CPU cores for your job
+#PBS -l nodes=1:ppn=1
+### Inform the scheduler of the amount of memory you expect
+#PBS -l mem=512mb
+### Set the destination for your program’s output and error
+#PBS -o $HOME/${PBS_JOBNAME}.e${PBS_JOBID}
+#PBS -e $HOME/${PBS_JOBNAME}.o${PBS_JOBID}
+
+#################
+# Job Execution #
+#################
+# load the fastqc tool
+module load fastqc
+# set the paths
+seqPath=~/mscbmi/Ex3
+seqfile1=$seqPath/heart_ERR030886.sample.1.fastq.gz
+seqfile2=$seqPath/heart_ERR030886.sample.2.fastq.gz
+# run fastqc
+fastqc -o $seqPath $seqfile1 &> $seqPath\/kidney.fastqc.log
+fastqc -o $seqPath $seqfile2 &>> $seqPath\/kidney.fastqc.log
+```
+
+
 
 
 
