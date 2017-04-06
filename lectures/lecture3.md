@@ -453,6 +453,12 @@ Next submit the job to compute nodes and monitor the job status:
 qsub run_bwa_heart.pbs
 qstat
 ```
+After the job is completed, go to the result file and check that you have successfully generated the .sam and .bam files:
+
+```bash
+cd ~/mscbmi/Ex4/bwa/
+ls -l
+```
 
 
 *************************
