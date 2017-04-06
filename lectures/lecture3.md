@@ -370,7 +370,7 @@ qstat
 ```
 You can review the QC results in the corresponding directories as you did in Exercise 2.
 
-Note: If you need to submit many jobs to the computation nodes, you don't have to type the above commands multiple times. Instead, you can simply create a new script named say **submit_jobs.sh** containing a script like the following:
+Note: If you need to submit many jobs to the computation nodes, you don't have to type the above commands multiple times. Instead, you can simply create a new shell script named say **submit_jobs.sh** containing a script like the following:
 
 ```bash
 #!/bin/bash
@@ -382,6 +382,75 @@ Then execute the script:
 
 ```bash
 sh submit_jobs.sh
+```
+You may need to give the user (u) the authority to execute (x) the script you just created (submit_jobs.sh) before you can run/execute your shell script:
+
+```bash
+chmod u+x submit_jobs.sh
+$ ./submit_jobs.sh
+```
+
+Next up we are going to align the sequence reads to the reference human genome (hg19) using two alignment tools - BWA (http://bio-bwa.sourceforge.net) and Bowtie2 (http://bowtie-bio.sourceforge.net/bowtie2/index.shtml). Both tools use the Burrows--Wheeler transformation to reduce the memory requirement for the sequence alignment. Each has its own set of limitations, for example, the lengths of reads it accepts, how it outputs read alignments, how many mismatches there can be, whether it produces gapped alignments, etc.). Please note for RNA-Seq data, people use splicing-aware alignment tools such as TopHat and STAR aligners.
+
+** Exercise 4: Sequence alignment on HPC cluster**
+
+First, copy the pair-end Illumina sequence files for heart from Exercise 3
+
+```bash
+cp ~/mscbmi/Ex3/*.fastq.gz ~/mscbmi/Ex4
+```
+
+To run the alignment using **bwa** on the cluster, you need to create a new job submission script named **run_bwa_heart.pbs** in nano:
+
+```
+#!/bin/bash
+###############################
+# Resource Manager Directives #
+###############################
+### Set the name of the job
+#PBS -N run_bwa_heart
+### Select the shell you would like to script to execute within
+#PBS -S /bin/bash
+### Inform the scheduler of the expected runtime
+#PBS -l walltime=0:59:00
+### Inform the scheduler of the number of CPU cores for your job
+#PBS -l nodes=1:ppn=4
+### Inform the scheduler of the amount of memory you expect
+#PBS -l mem=2gb
+### Set the destination for your program’s output and error
+#PBS -o $HOME/${PBS_JOBNAME}.e${PBS_JOBID}
+#PBS -e $HOME/${PBS_JOBNAME}.o${PBS_JOBID}
+
+#################
+# Job Execution #
+#################
+# load the programs to be executed
+module load samtools bwa
+# set the input files and program paths
+seqPath=~/mscbmi/Ex4
+outPath=~/mscbmi/Ex4/bwa
+seqfile1=$seqPath/heart_ERR030886.sample.1.fastq.gz
+seqfile2=$seqPath/heart_ERR030886.sample.2.fastq.gz
+readgroup=$outPath/heart_ERR030886.sample
+referenceSeq=/group/referenceFiles/Homo_sapiens/UCSC/hg19/hg19.GATKbundle.1.5/ucsc.hg19.fasta
+
+# create output directory if  it does not exist
+if [ ! -d $outPath ]; then mkdir $outPath; fi
+
+# align the pair-ended sequences, use 4 threads
+bwa aln -t 4 $referenceSeq $seqfile1 >  $readgroup.1.sai
+bwa aln -t 4 $referenceSeq $seqfile2 >  $readgroup.2.sai
+bwa sampe $referenceSeq $readgroup.1.sai $readgroup.2.sai $seqfile1 $seqfile2 > $readgroup.sam
+# convert sam file to bam file; sort and index bam file
+samtools view -F 4 -Sb $readgroup.sam > $readgroup.bam
+samtools sort $readgroup.bam $readgroup.sorted
+samtools index $readgroup.sorted.bam
+```
+Next submit the job to compute nodes and monitor the job status:
+
+```bash
+qsub run_bwa_heart.pbs
+$ qstat
 ```
 
 
@@ -427,6 +496,10 @@ module whatis <tool>
 module help 
 
 
+#PBS -p  >> priority
 
+
+showq
+checkjob <jobID> >> whot happends with my job
 
 
