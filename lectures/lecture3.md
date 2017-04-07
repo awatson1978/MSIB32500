@@ -519,7 +519,21 @@ qsub run_bowtie2_heart.pbs
 qstat
 ```
 
+Once the alignment jobs are finished, take a look at the files generated:
 
+```bash
+ls -l ~/mscbmi/Ex4/bwa
+```
+and
+
+```bash
+ls -l ~/mscbmi/Ex4/bowtie2
+```
+You can now visualize the alignments on genome visualization tools such as 
+- Integrative Genomics Viewer [IGV](http://www.broadinstitute.org/igv)
+
+
+or Integrated Genome Browser (IGB) (http://bioviz.org) as well as UCSC genome browser. To view the aligned reads on IGV, download the tool and the sorted bam and bai files to your local computer, then select the correct reference genome (Human hg19) from scroll-down window of the IGV tool, open the _bam_file (File -> load from file). The following figure shows the same genomic region of ~2,000 bp on Chromosome 1 (chr1:161,196,688-161,198,759) in squish mode in IGV for both Bowtie2 and BWA alignments. You can see the reads overlapped with gene TOMM40L.
 
 
 *************************
