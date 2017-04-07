@@ -426,7 +426,7 @@ To run the alignment using **bwa** on the cluster, you need to create a new job 
 #################
 # load the programs to be executed
 module load bwa
-module load samtools/1.3.1
+module load samtools
 # set the input files and program paths
 seqPath=~/mscbmi/Ex4
 outPath=~/mscbmi/Ex4/bwa
@@ -444,7 +444,7 @@ bwa aln -t 4 $referenceSeq $seqfile2 >  $readgroup.2.sai
 bwa sampe $referenceSeq $readgroup.1.sai $readgroup.2.sai $seqfile1 $seqfile2 > $readgroup.sam
 # convert sam file to bam file; sort and index bam file
 samtools view -F 4 -Sb $readgroup.sam > $readgroup.bam
-samtools sort $readgroup.bam $readgroup.sorted
+samtools sort $readgroup.bam -o $readgroup.sorted.bam
 samtools index $readgroup.sorted.bam
 ```
 Next submit the job to compute nodes and monitor the job status:
@@ -509,7 +509,7 @@ bowtie2 -p 4 -x $referenceSeq -1 $seqfile1 -2 $seqfile2 -S $readgroup.sam
 
 # convert sam file to bam file, sort and index bam file
 samtools view -F 4 -Sb $readgroup.sam > $readgroup.bam
-samtools sort $readgroup.bam $readgroup.sorted
+samtools sort $readgroup.bam -o $readgroup.sorted.bam
 samtools index $readgroup.sorted.bam
 ```
 Now, use the following commands to submit and monitor the job:
