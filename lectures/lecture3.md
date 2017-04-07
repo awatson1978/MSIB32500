@@ -490,18 +490,18 @@ We are now going to run the alignment using **bowtie2** on the cluster, you need
 #################
 # Job Execution #
 #################
-# load the programs to be executed
-module load bowtie2/2.1.0
-module load samtools/1.3.1
-# set the input files and program paths
+
+module load samtools bowtie2
+
+# set the file and program paths
 seqPath=~/mscbmi/Ex4
 outPath=~/mscbmi/Ex4/bowtie2
 seqfile1=$seqPath/heart_ERR030886.sample.1.fastq.gz
 seqfile2=$seqPath/heart_ERR030886.sample.2.fastq.gz
 readgroup=$outPath/heart_ERR030886.sample
-referenceSeq=/group/referenceFiles/Homo_sapiens/UCSC/hg19/hg19.GATKbundle.1.5/ucsc.hg19.fasta
+referenceSeq=/group/referenceFiles/Homo_sapiens/UCSC/hg19/Sequence/IlluminaBowtie2Index/genome
 
-# create output directory if  it does not exist
+# create output directory if it does not exist
 if [ ! -d $outPath ]; then mkdir $outPath; fi
 
 # align the pair-ended sequences, use 4 threads
@@ -512,7 +512,6 @@ samtools view -F 4 -Sb $readgroup.sam > $readgroup.bam
 samtools sort $readgroup.bam $readgroup.sorted
 samtools index $readgroup.sorted.bam
 ```
-
 Now, use the following commands to submit and monitor the job:
 
 ```bash
