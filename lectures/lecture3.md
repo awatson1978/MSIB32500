@@ -524,16 +524,14 @@ Once the alignment jobs are finished, take a look at the files generated:
 ```bash
 ls -l ~/mscbmi/Ex4/bwa
 ```
-You should see 6 files as follow:
+You should see the following 6 files:
 
-[jandrade@cri12in01 Ex4]$ ls -l ~/mscbmi/Ex4/bwa
-total 75489
--rw-r-----. 1 jandrade root  2584600 Apr  6 20:03 heart_ERR030886.sample.1.sai
--rw-r-----. 1 jandrade root  2582728 Apr  6 20:03 heart_ERR030886.sample.2.sai
--rw-r-----. 1 jandrade root  4874284 Apr  6 20:03 heart_ERR030886.sample.bam
--rw-r-----. 1 jandrade root 45818228 Apr  6 20:03 heart_ERR030886.sample.sam
--rw-r-----. 1 jandrade root  4745688 Apr  6 20:03 heart_ERR030886.sample.sorted.bam
--rw-r-----. 1 jandrade root   411216 Apr  6 20:03 heart_ERR030886.sample.sorted.bam.bai
+- heart_ERR030886.sample.1.sai
+- heart_ERR030886.sample.2.sai
+- heart_ERR030886.sample.bam
+- heart_ERR030886.sample.sam
+- heart_ERR030886.sample.sorted.bam
+- heart_ERR030886.sample.sorted.bam.bai
 
 and
 
