@@ -474,7 +474,7 @@ We are now going to run the alignment using **bowtie2** on the cluster, you need
 # Resource Manager Directives #
 ###############################
 ### Set the name of the job
-#PBS -N run_bwa_heart
+#PBS -N run_bowtie2_heart
 ### Select the shell you would like to script to execute within
 #PBS -S /bin/bash
 ### Inform the scheduler of the expected runtime
@@ -553,6 +553,10 @@ To transfer a file from TARBELL to your local computer, open a new comand line i
 ```bash
 scp jandrade@tarbell.cri.uchicago.edu:~/mscbmi/Ex4/bwa/heart_ERR030886.sample.bam ./
 scp jandrade@tarbell.cri.uchicago.edu:~/mscbmi/Ex4/bwa/heart_ERR030886.sample.sorted.bam.bai ./
+
+scp jandrade@tarbell.cri.uchicago.edu:~/mscbmi/Ex4/bowtie2/heart_ERR030886.sample.sorted.bam ./
+scp jandrade@tarbell.cri.uchicago.edu:~/mscbmi/Ex4/bowtie2/heart_ERR030886.sample.sorted.bam.bai ./
+
 ```
 
 
