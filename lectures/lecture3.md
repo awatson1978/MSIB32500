@@ -559,6 +559,7 @@ Now search for the gene ** TOMM40L** on IGV. You should be able to see the mappi
 
 ![igv](https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/cheatsheets/IGV.png)
 
-*************************
-## Week 3 Homework: :house: The folder ~/mscbmi/Ex4/
+## Week 3 Homework: :house: 
+
+Investigate how to use the UCSC genome browser online, to replace the IGV visualiztion of the previous results. Send me an e-mail with the image of your UCSC genome browser session showing the **TOMM40L** gene.
 
