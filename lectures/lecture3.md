@@ -559,62 +559,6 @@ Now search for the gene ** TOMM40L** on IGV. You should be able to see the mappi
 
 ![igv](https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/cheatsheets/IGV.png)
 
-
-
-
-or Integrated Genome Browser (IGB) (http://bioviz.org) as well as UCSC genome browser. To view the aligned reads on IGV, download the tool and the sorted bam and bai files to your local computer, then select the correct reference genome (Human hg19) from scroll-down window of the IGV tool, open the _bam_file (File -> load from file). The following figure shows the same genomic region of ~2,000 bp on Chromosome 1 (chr1:161,196,688-161,198,759) in squish mode in IGV for both Bowtie2 and BWA alignments. You can see the reads overlapped with gene TOMM40L.
-
-
-scp jandrade@tarbell.cri.uchicago.edu:~/mscbmi/Ex4/bwa/heart_ERR030886.sample.bam ./
-
-
-
 *************************
-
-Gardner -> Lmod
-Tarbell -> modules
-
-See which modules are available to be loaded:
-module avail
-
-Load packages:
-module load <package1> <package1>
-
-module list
-
-psub
-qdel
-qstat
-qstat -f extended job status
-
-qsub -I interactive
-
-#PBS -s 
-
-watch qstat
-
-**************
-module avail
-module load intel/2017
-module avail
-module spider >> find all possible modules
-module keywork key1 key2 >> search all possible modules matching key1 and/or key2
-
-module list
-module save >> save your current module setting
-module restore >> restore
-module purge >> clean your modules
-module save <name>
-module restore <name>
-module help  <tool>   i.e. module help R/3.3.2
-module whatis <tool>
-module help 
-
-
-#PBS -p  >> priority
-
-
-showq
-checkjob <jobID> >> whot happends with my job
-
+## Week 3 Homework: :house: The folder ~/mscbmi/Ex4/
 
