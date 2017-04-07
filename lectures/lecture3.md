@@ -538,6 +538,14 @@ and
 ```bash
 ls -l ~/mscbmi/Ex4/bowtie2
 ```
+Should list the follwoing files:
+
+- heart_ERR030886.sample.bam
+- heart_ERR030886.sample.sam
+- heart_ERR030886.sample.sorted.bam
+- heart_ERR030886.sample.sorted.bam.bai
+
+
 You can now visualize the alignments on genome visualization tools such as the Integrative Genomics Viewer [IGV](http://www.broadinstitute.org/igv). Download and install the IGV to your local computer, as well as the bam and bai files.
 
 
