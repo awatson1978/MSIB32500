@@ -547,11 +547,12 @@ Should list the follwoing files:
 
 
 You can now visualize the alignments on genome visualization tools such as the Integrative Genomics Viewer [IGV](http://www.broadinstitute.org/igv). Download and install the IGV to your local computer. 
-Trasfer the *bam* and *bai* files from TARBELL to your local computer. Open a new comand line in your local computer and use the **scp** command: 
+Trasfer the *bam* and *bai* files from TARBELL to your local computer. 
+To transfer a file from TARBELL to your local computer, open a new comand line in your local computer and use the **scp** command: 
 
 ```bash
 scp jandrade@tarbell.cri.uchicago.edu:~/mscbmi/Ex4/bwa/heart_ERR030886.sample.bam ./
-scp jandrade@tarbell.cri.uchicago.edu:~/mscbmi/Ex4/bwa/heart_ERR030886.sample.bam.bai ./
+scp jandrade@tarbell.cri.uchicago.edu:~/mscbmi/Ex4/bwa/heart_ERR030886.sample.sorted.bam.bai ./
 ```
 
 
