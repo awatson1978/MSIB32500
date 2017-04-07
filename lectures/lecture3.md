@@ -557,7 +557,7 @@ Move the files you just downloaded to a another folder in your Desktop (bowtie2_
 In your local computer, open the the Integrative Genomics Viewer and load the **bam** files *(File -> load from file)* from each result folder.
 Now search for the gene ** TOMM40L** on IGV. You should be able to see the mapping results for the two tools, as in the figure bellow:
 
-![igv]()
+![igv](https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/cheatsheets/IGV.png)
 
 
 
