@@ -546,7 +546,12 @@ Should list the follwoing files:
 - heart_ERR030886.sample.sorted.bam.bai
 
 
-You can now visualize the alignments on genome visualization tools such as the Integrative Genomics Viewer [IGV](http://www.broadinstitute.org/igv). Download and install the IGV to your local computer, as well as the bam and bai files.
+You can now visualize the alignments on genome visualization tools such as the Integrative Genomics Viewer [IGV](http://www.broadinstitute.org/igv). Download and install the IGV to your local computer. Trasfer the *bam* and *bai* files from TARBELL to your local computer:
+
+```bash
+scp jandrade@tarbell.cri.uchicago.edu:~/mscbmi/Ex4/bwa/heart_ERR030886.sample.bam ./
+scp jandrade@tarbell.cri.uchicago.edu:~/mscbmi/Ex4/bwa/heart_ERR030886.sample.bam.bai ./
+```
 
 
 
