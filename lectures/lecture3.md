@@ -543,13 +543,21 @@ Trasfer the *bam* and *bai* files from TARBELL to your local computer.
 To transfer a file from TARBELL to your local computer, open a new comand line in your local computer and use the **scp** command: 
 
 ```bash
-scp jandrade@tarbell.cri.uchicago.edu:~/mscbmi/Ex4/bwa/heart_ERR030886.sample.bam ./
+scp jandrade@tarbell.cri.uchicago.edu:~/mscbmi/Ex4/bwa/heart_ERR030886.sample.sorted.bam ./
 scp jandrade@tarbell.cri.uchicago.edu:~/mscbmi/Ex4/bwa/heart_ERR030886.sample.sorted.bam.bai ./
+```
+Move the files you just downloaded to a folder in your Desktop (bwa_r)
 
+```bash
 scp jandrade@tarbell.cri.uchicago.edu:~/mscbmi/Ex4/bowtie2/heart_ERR030886.sample.sorted.bam ./
 scp jandrade@tarbell.cri.uchicago.edu:~/mscbmi/Ex4/bowtie2/heart_ERR030886.sample.sorted.bam.bai ./
-
 ```
+Move the files you just downloaded to a another folder in your Desktop (bowtie2_r)
+
+In your local computer, open the the Integrative Genomics Viewer and load the **bam** files *(File -> load from file)* from each result folder.
+Now search for the gene ** TOMM40L** on IGV. You should be able to see the mapping results for the two tools, as in the figure bellow:
+
+
 
 
 
