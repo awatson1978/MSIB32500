@@ -175,6 +175,7 @@ scp ./GSE31736_RAW.tar t.cri.biowksp40@tarbell.cri.uchicago.edu:~/
 
 b. You can use *wget* to get a file from the internet directly to your working directory in Linux
 ```bash
+cd ~
 wget http://downloads.yeastgenome.org/curation/chromosomal_feature/saccharomyces_cerevisiae.gff
 ```
 ## Input/Output redirect and pipe
