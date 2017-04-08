@@ -157,6 +157,20 @@ The *scp* (secure copy command) allows you to copy/move files between compters o
 ```bash
 scp example1.txt username@tarbell.cri.uchicago.edu:.
 ```
+We will now use the scp command to transfer a file from your local compuer to your **home** directory on TARBELL
+
+First, download the file available at the following link, to your local computer:
+
+https://github.com/MScBiomedicalInformatics/MSIB32500/blob/master/data/GSE31736_RAW.tar
+
+Using your computer command line (**open a new terminal**), navigate (use the cd command) to the directory where file 'GSE31736_RAW.tar' is located.
+
+Now use the **scp** command with your username and password, your command should look like:
+
+```bash
+scp ./GSE31736_RAW.tar jandrade@tarbell.cri.uchicago.edu:~/mscbmi/Ex1
+```
+
 :bulb: The [hypexr.org](http://www.hypexr.org/linux_scp_help.php) website has nice list of examples on how to use secure copy (also some [computer comics and cartoons](http://www.hypexr.org/comics.php))
 
 b. You can use *wget* to get a file from the internet directly to your working directory in Linux
