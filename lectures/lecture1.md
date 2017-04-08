@@ -168,7 +168,7 @@ Using your computer command line (**open a new terminal**), navigate (use the cd
 Now use the **scp** command with your username and password, your command should look like:
 
 ```bash
-scp ./GSE31736_RAW.tar jandrade@tarbell.cri.uchicago.edu:~/mscbmi/Ex1
+scp ./GSE31736_RAW.tar t.cri.biowksp40@tarbell.cri.uchicago.edu:~/
 ```
 
 :bulb: The [hypexr.org](http://www.hypexr.org/linux_scp_help.php) website has nice list of examples on how to use secure copy (also some [computer comics and cartoons](http://www.hypexr.org/comics.php))
