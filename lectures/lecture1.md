@@ -214,7 +214,7 @@ A standard Unix/Linux installation will have available several text editors (lik
 a. Use the symbol '>' to redirect the output of a command to a file
 
 ```bash
-cd /group/bioinformatics/shared/MSIB32500/Lecture1/linux               
+cd /group/mscbmi/lecture1/              
 less SRR001655.fastq                 ### View a fastq file: use q to exit, space or f to the next page,
                                      ### b to the previous page, and / to search a word
 head -20 SRR001655.fastq             ### Show the first 20 line of the file
