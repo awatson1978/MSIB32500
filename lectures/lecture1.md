@@ -554,7 +554,11 @@ sed 's/N/0/g' top_1000_tab.txt
 ```
 Check that the orininal top_1000_tab.txt  file was not altered.
 
+To logout of TARBELL, type:
 
+```bash
+exit
+```
 
 
 ## Week 1 Homework: :house:
