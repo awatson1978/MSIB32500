@@ -81,6 +81,7 @@ pwd
 
 a. Create a new directory
 ```bash
+cd ~
 mkdir mydir  ### Make a new directory called 'mydir'
 mkdir newfolder1
 ls -l 
@@ -107,12 +108,12 @@ mkdir newfolder2
 cd newfolder2
 cp ~/newfolder1/file1.txt .     ### Copy file1.txt on current (.) directory
 ls -l
-cd ~
 pwd
 ```
 d. Remove a file or directory
 
 ```bash
+cd ~
 cd newfolder1        
 ls -l
 rm file1.txt          ### Remove file1.txt
@@ -183,6 +184,7 @@ wget http://downloads.yeastgenome.org/curation/chromosomal_feature/saccharomyces
 a. Use the symbol '>' to redirect the output of a command to a file
 
 ```bash
+cd ~
 nano text1.txt                       ### Create a new file and write some text on it
  
 cat text1.txt                        ### Print file1.txt to screen
@@ -224,6 +226,10 @@ tail -20 SRR001655.fastq             ### Show the last 20 lines of the file
 b. Pattern Search with 'grep'. The grep command searches specified files or other input(stdin) for patterns matching a given expression(s).
 
 ```bash
+cp /group/mscbmi/lecture1/list1.txt ~/
+cp /group/mscbmi/lecture1/list2.txt ~/
+cd ~
+ls -l
 $ cat list1.txt                      ### See the contents of file list1.txt
 apples
 bananas
@@ -281,6 +287,9 @@ atcgagcaat
 e. Table manipulation: sort, uniq, cut, awk, and paste
 
 ```bash
+cp /group/mscbmi/lecture1/table.txt ~/
+cd ~
+ls -l
 $ cat table.txt                                      ### show the contents on table.txt
  CHR          SNP         BP   A1      C_A      C_U   A2        CHISQ            P           OR
   19   rs10401969   19268718    C      222      890    T      0.03462       0.8524       0.9857
@@ -303,7 +312,7 @@ CHR  SNP         BP         A1  C_A  C_U   A2  CHISQ    P       OR
  
 $ sort -k1n table.txt  > table_sorted1.txt         ### sort the table by the first column in numerical order
                                                    ### and write the results to a new file
- 
+ ls -l
 $ cat cat table_sorted1.txt
 CHR          SNP         BP   A1      C_A      C_U   A2        CHISQ            P           OR
    1   rs10873883   76734548    G      934     3811    A       0.5325       0.4656       0.9691
@@ -351,13 +360,15 @@ CHR  SNP         BP         A1  C_A  C_U   A2  CHISQ    P       OR      apples
 15   rs10401369  19268718   C   232  890   T   0.03232  0.2524  0.1157
 11   rs10873487  767334548  G   964  3811  A   0.5525   0.2356  0.2391
  
+cp /group/mscbmi/lecture1/p1.txt ~/
 $ cat p1.txt           ### See the contents of file p1.txt
 IBM
 MSFT
 Apple
 SAP
 Yahoo
- 
+
+cp /group/mscbmi/lecture1/p2.txt ~/
 $ cat p2.txt          ### See the contents of file p2.txt
 25.23
 234.02
@@ -372,7 +383,7 @@ Apple   23.03
 SAP     11.22
 Yahoo   15.8
  
-> paste -d ":" p1.txt p2.txt  ###P aste the files delimited by ':'  
+> paste -d ":" p1.txt p2.txt  ### Paste the files delimited by ':'  
 IBM:25.23
 MSFT:234.02
 Apple:23.03
@@ -444,7 +455,6 @@ Exploring a fastq file using 'less', use <space> or f to go to the Next Page; b 
 
 ```bash
 cd ~
-cp /group/bioinformatics/shared/MSIB32500/Lecture1/linux/SRR001655.fastq . 
 less SRR001655.fastq
 ```
 1. How many reads are there in the file SRR001655.fastq? (Hint: use cat, grep and wc) 
@@ -501,7 +511,7 @@ Now explore the result of the following command:
 ```bash
 awk '/N/{print $1,"\t",$2,"\t",$3,"\t",$4}' top_1000_tab.txt
 ```
-Note the effect of $1, $2, $3 and $4 (change the order in the command). The '\t' is a 'scape' sequence the ‘\t’ is an escape sequence, used to represent a tab delimited. Other scape sequences are: '\n' = new line; '\r' = carriage return; '\\' = a literal backslash.
+Note the effect of $1, $2, $3 and $4 (change the order in the command). The '\t' is a 'scape' sequence, used to represent a tab delimited. Other scape sequences are: '\n' = new line; '\r' = carriage return; '\\' = a literal backslash.
 
 Now explore the result of the following command:
 
@@ -544,9 +554,6 @@ sed 's/N/0/g' top_1000_tab.txt
 ```
 Check that the orininal top_1000_tab.txt  file was not altered.
 
-```bash
-sed 's/N/0/g' top_1000_tab.txt 
-```
 
 
 
