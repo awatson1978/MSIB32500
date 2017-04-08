@@ -142,6 +142,8 @@ g. Compress files
 ```bash
 cd /group/mscbmi/lecture1/
 ls -l SRR*                     ### List all files that start with SRR
+cp SRR001655.fastq ~/
+cd ~/
 gzip SRR001655.fastq           ### Compress a file, this command should create a compressed file named SRR001655.fastq.gz
 ls -l                        
 gunzip SRR001655.fastq.gz      ### Decompress a file
