@@ -584,6 +584,7 @@ exit
     f. Describe what the following command do: cut -f 1 features.gff | sort | uniq -c | sort -k1n
     
     g. Which chromosome is the longest and which one is the shortest?
+    
     h. Describe what the following command do: sed 's/chrI/chr1/g' features.gff > new_features.gff
 ```
 :point_right: Send your homework via e-mail, your homework should have the answers and commands used for each item. 
