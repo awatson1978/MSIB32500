@@ -140,7 +140,7 @@ mv newfolder2/file1.txt newnamefolder
 g. Compress files
 
 ```bash
-cd /group/bioinformatics/shared/MSIB32500/Lecture1/linux
+cd /group/mscbmi/lecture1/
 ls -l SRR*                     ### List all files that start with SRR
 gzip SRR001655.fastq           ### Compress a file, this command should create a compressed file named SRR001655.fastq.gz
 ls -l                        
